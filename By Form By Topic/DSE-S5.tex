@@ -1,0 +1,2553 @@
+\documentclass[12pt, a4paper]{article}
+
+\input{style.tex}
+
+
+
+\begin{document}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Overview of S5 Chapters}
+\lfoot{S5 Chapters}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{\fontsize{24pt}{24pt}\selectfont {S5 Chapters}} \\\vspace{1cm}
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Chapter List}
+\begin{enumx}[label=Ch \arabic*. , leftmargin=2cm,rightmargin=0pt,labelwidth=17mm, itemsep=3pt, topsep=3mm, labelsep=2mm, labelindent=0pt, align=left, partopsep=0mm ]
+\item \hyperref[chapter:S5-1]{Basic Properties of Circles} \hfill P.\pageref{chapter:S5-1}
+\item \hyperref[chapter:S5-2]{Tangents to Circles \NF} \hfill P.\pageref{chapter:S5-2}
+\item \hyperref[chapter:S5-3]{Inequalities} \hfill P.\pageref{chapter:S5-3}
+\item \hyperref[chapter:S5-4]{Linear Programming \NF} \hfill P.\pageref{chapter:S5-4}
+\item \hyperref[chapter:S5-5]{Applications of Trigonometry in 2-D problems \NF} \hfill P.\pageref{chapter:S5-5}
+\item \hyperref[chapter:S5-6]{Applications of Trigonometry in 3-D problems \NF} \hfill P.\pageref{chapter:S5-6}
+\item \hyperref[chapter:S5-7]{Equations of Circles} \hfill P.\pageref{chapter:S5-7}
+\item \hyperref[chapter:S5-8]{Locus} \hfill P.\pageref{chapter:S5-8}
+\item \hyperref[chapter:S5-9]{Measures of Dispersion} \hfill P.\pageref{chapter:S5-9}
+\item \hyperref[chapter:S5-10]{Permutation and Combination \NF} \hfill P.\pageref{chapter:S5-10}
+\item \hyperref[chapter:S5-11]{More about Probability \NF} \hfill P.\pageref{chapter:S5-11}
+\end{enumx}
+\section*{Mark Distribution from Chapter 1 to Chapter 11}
+%Graph
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+width=18cm,
+height=7cm,
+bar width=0.6cm,
+ybar,
+ylabel={Weight},
+xticklabels={
+Ch 1,Ch 2,Ch 3,Ch 4,Ch 5,Ch 6,Ch 7,Ch 8,Ch 9,Ch 10,Ch 11},
+xtick=data,
+ymin=0,
+nodes near coords,
+nodes near coords align={vertical},
+x tick label style={rotate=45,anchor=east},
+]
+\addplot coordinates {(1,68)(2,20)(3,64)(4,25)(5,9)(6,137)(7,119)(8,98)(9,162)(10,22)(11,74)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+
+%Graph
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+width=18cm,
+height=7cm,
+bar width=0.6cm,
+ybar,
+ylabel={P1 Marks},
+xticklabels={
+Ch 1,Ch 2,Ch 3,Ch 4,Ch 5,Ch 6,Ch 7,Ch 8,Ch 9,Ch 10,Ch 11},
+xtick=data,
+ymin=0,
+nodes near coords,
+nodes near coords align={vertical},
+x tick label style={rotate=45,anchor=east},
+]
+\addplot coordinates {(1,44)(2,7)(3,48)(4,13)(5,0)(6,125)(7,95)(8,86)(9,119)(10,10)(11,60)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+
+%Graph
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+width=18cm,
+height=7cm,
+bar width=0.6cm,
+ybar,
+ylabel={P2 Marks},
+xticklabels={
+Ch 1,Ch 2,Ch 3,Ch 4,Ch 5,Ch 6,Ch 7,Ch 8,Ch 9,Ch 10,Ch 11},
+xtick=data,
+ymin=0,
+nodes near coords,
+nodes near coords align={vertical},
+x tick label style={rotate=45,anchor=east},
+]
+\addplot coordinates {(1,24)(2,13)(3,16)(4,12)(5,9)(6,12)(7,24)(8,12)(9,43)(10,12)(11,14)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Basic Properties of Circles}
+\lfoot{S5-Ch1}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch1}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Basic Properties of Circles}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-1}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 1.\arabic*\ ]
+\item \hyperref[section:5-1-1]{Basic Terms of a Circle}
+\item \hyperref[section:5-1-2]{Chords of a Circle}
+\item \hyperref[section:5-1-3]{Angles in a Circle}
+\item \hyperref[section:5-1-4]{Relationships among Arcs, Chords and Angles}
+\item \hyperref[section:5-1-5]{Cyclic Quadrilaterals}
+\item \hyperref[section:5-1-6]{Concyclic Points \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 1.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 1.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 1.3 &  $4$ &  &  &  &  &  $5$ &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 1.4 &  &  $4$ &  $5$ &  &  &  &  &  &  &  $8$ &  &  &  &  $4$ &  &  \\\hline
+Sec 1.5 &  &  &  &  &  &  &  &  $6$ &  $5$ &  &  &  &  &  &  &  \\\hline
+Sec 1.6 &  &  &  &  &  &  &  &  &  &  $3$ &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 1.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 1.2 &  $1$ &  $1$ &  &  &  $1$ &  &  &  &  $1$ &  &  &  &  &  &  &  \\\hline
+Sec 1.3 &  $1$ &  $1$ &  $1$ &  &  &  $1$ &  $1$ &  $1$ &  $1$ &  &  &  &  $1$ &  &  &  \\\hline
+Sec 1.4 &  $1$ &  $1$ &  &  $1$ &  $1$ &  $1$ &  &  &  &  $1$ &  $1$ &  &  &  $1$ &  $1$ &  \\\hline
+Sec 1.5 &  &  &  &  &  &  &  &  $1$ &  &  &  &  $1$ &  &  $1$ &  &  \\\hline
+Sec 1.6 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+        & 1.1 & 1.2 & 1.3 & 1.4 & 1.5 & 1.6 \\\hline
+\hline
+Paper 1 - A(1)&  &  & \hyperref[DSE2012S-CoreP1-Q07]{Samp-P1-Q7} & \hyperref[DSE2012P-CoreP1-Q07]{Prac-P1-Q7} & \hyperref[DSE2018-CoreP1-Q08]{2018-P1-Q8} &  \\
+&  &  & \hyperref[DSE2015-CoreP1-Q08]{2015-P1-Q8} & \hyperref[DSE2012-CoreP1-Q08]{2012-P1-Q8} &  &  \\
+&  &  &  & \hyperref[DSE2023-CoreP1-Q07]{2023-P1-Q7} &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  & \hyperref[DSE2019-CoreP1-Q13]{2019-P1-Q13} & \hyperref[DSE2017-CoreP1-Q10]{2017-P1-Q10} &  \\
+\hline
+Paper 1 - B&  &  &  &  &  &  \\
+\hline
+\hline
+Paper 2 - A&  & \hyperref[DSE2012S-CoreP2-Q16]{Samp-P2-Q16} & \hyperref[DSE2012S-CoreP2-Q21]{Samp-P2-Q21} & \hyperref[DSE2012S-CoreP2-Q22]{Samp-P2-Q22} & \hyperref[DSE2017-CoreP2-Q21]{2017-P2-Q21} &  \\
+&  & \hyperref[DSE2014-CoreP2-Q21]{2014-P2-Q21} & \hyperref[DSE2012P-CoreP2-Q20]{Prac-P2-Q20} & \hyperref[DSE2012P-CoreP2-Q21]{Prac-P2-Q21} & \hyperref[DSE2021-CoreP2-Q22]{2021-P2-Q22} &  \\
+&  & \hyperref[DSE2018-CoreP2-Q17]{2018-P2-Q17} & \hyperref[DSE2012-CoreP2-Q20]{2012-P2-Q20} & \hyperref[DSE2013-CoreP2-Q19]{2013-P2-Q19} & \hyperref[DSE2023-CoreP2-Q22]{2023-P2-Q22} &  \\
+&  &  & \hyperref[DSE2015-CoreP2-Q21]{2015-P2-Q21} & \hyperref[DSE2014-CoreP2-Q20]{2014-P2-Q20} &  &  \\
+&  &  & \hyperref[DSE2016-CoreP2-Q22]{2016-P2-Q22} & \hyperref[DSE2015-CoreP2-Q20]{2015-P2-Q20} &  &  \\
+&  &  & \hyperref[DSE2018-CoreP2-Q22]{2018-P2-Q22} & \hyperref[DSE2019-CoreP2-Q21]{2019-P2-Q21} &  &  \\
+&  &  & \hyperref[DSE2022-CoreP2-Q21]{2022-P2-Q21} & \hyperref[DSE2020-CoreP2-Q22]{2020-P2-Q22} &  &  \\
+&  &  &  & \hyperref[DSE2023-CoreP2-Q16]{2023-P2-Q16} &  &  \\
+&  &  &  & \hyperref[DSE2024-CoreP2-Q22]{2024-P2-Q22} &  &  \\
+\hline
+Paper 2 - B&  & \hyperref[DSE2012P-CoreP2-Q40]{Prac-P2-Q40} & \hyperref[DSE2017-CoreP2-Q40]{2017-P2-Q40} &  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  &  & \hyperref[DSE2019-CoreP1-Q19]{2019-P1-Q19} \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch1 - 1.1 Basic Terms of a Circle
+\section*{Section 1.1 - Basic Terms of a Circle}\phantomsection\label{section:5-1-1}
+
+
+
+
+
+% S5 Ch1 - 1.2 Chords of a Circle
+\section*{Section 1.2 - Chords of a Circle}\phantomsection\label{section:5-1-2}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q16} \problem[Samp-P2-Q16]{DSE2012S-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q21} \problem[2014-P2-Q21]{DSE2014-CoreP2-Q21}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q17} \problem[2018-P2-Q17]{DSE2018-CoreP2-Q17}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=4]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q40} \problem[Prac-P2-Q40]{DSE2012P-CoreP2-Q40}
+\end{enumx}
+
+
+
+
+% S5 Ch1 - 1.3 Angles in a Circle
+\section*{Section 1.3 - Angles in a Circle}\phantomsection\label{section:5-1-3}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=5]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q07} \problem[Samp-P1-Q7]{DSE2012S-CoreP1-Q07}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q08} \problem[2015-P1-Q8]{DSE2015-CoreP1-Q08}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=7]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q21} \problem[Samp-P2-Q21]{DSE2012S-CoreP2-Q21}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q20} \problem[Prac-P2-Q20]{DSE2012P-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q20} \problem[2012-P2-Q20]{DSE2012-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q21} \problem[2015-P2-Q21]{DSE2015-CoreP2-Q21}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q22} \problem[2016-P2-Q22]{DSE2016-CoreP2-Q22}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q22} \problem[2018-P2-Q22]{DSE2018-CoreP2-Q22}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q21} \problem[2022-P2-Q21]{DSE2022-CoreP2-Q21}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=14]
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q40} \problem[2017-P2-Q40]{DSE2017-CoreP2-Q40}
+\end{enumx}
+
+
+
+
+% S5 Ch1 - 1.4 Relationships among Arcs, Chords and Angles
+\section*{Section 1.4 - Relationships among Arcs, Chords and Angles}\phantomsection\label{section:5-1-4}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=15]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q07} \problem[Prac-P1-Q7]{DSE2012P-CoreP1-Q07}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q08} \problem[2012-P1-Q8]{DSE2012-CoreP1-Q08}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP1-Q07} \problem[2023-P1-Q7]{DSE2023-CoreP1-Q07}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=18]
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q13} \problem[2019-P1-Q13]{DSE2019-CoreP1-Q13}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=19]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q22} \problem[Samp-P2-Q22]{DSE2012S-CoreP2-Q22}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q21} \problem[Prac-P2-Q21]{DSE2012P-CoreP2-Q21}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q19} \problem[2013-P2-Q19]{DSE2013-CoreP2-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q20} \problem[2014-P2-Q20]{DSE2014-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q20} \problem[2015-P2-Q20]{DSE2015-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q21} \problem[2019-P2-Q21]{DSE2019-CoreP2-Q21}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q22} \problem[2020-P2-Q22]{DSE2020-CoreP2-Q22}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q16} \problem[2023-P2-Q16]{DSE2023-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q22} \problem[2024-P2-Q22]{DSE2024-CoreP2-Q22}
+\end{enumx}
+
+
+
+
+% S5 Ch1 - 1.5 Cyclic Quadrilaterals
+\section*{Section 1.5 - Cyclic Quadrilaterals}\phantomsection\label{section:5-1-5}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=28]
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q08} \problem[2018-P1-Q8]{DSE2018-CoreP1-Q08}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=29]
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q10} \problem[2017-P1-Q10]{DSE2017-CoreP1-Q10}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=30]
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q21} \problem[2017-P2-Q21]{DSE2017-CoreP2-Q21}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q22} \problem[2021-P2-Q22]{DSE2021-CoreP2-Q22}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q22} \problem[2023-P2-Q22]{DSE2023-CoreP2-Q22}
+\end{enumx}
+
+
+
+
+% S5 Ch1 - 1.6 Concyclic Points \NF
+\section*{Section 1.6 - Concyclic Points \NF}\phantomsection\label{section:5-1-6}
+
+\textbf{Cross Topic}
+\begin{enumx}[label=\arabic*.,start=33]
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q19} \problem[2019-P1-Q19]{DSE2019-CoreP1-Q19}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012S-CoreP2-Q16}
+\item \problemans{DSE2014-CoreP2-Q21}
+\item \problemans{DSE2018-CoreP2-Q17}
+\item \problemans{DSE2012P-CoreP2-Q40}
+\item \problemans{DSE2012S-CoreP1-Q07}
+\item \problemans{DSE2015-CoreP1-Q08}
+\item \problemans{DSE2012S-CoreP2-Q21}
+\item \problemans{DSE2012P-CoreP2-Q20}
+\item \problemans{DSE2012-CoreP2-Q20}
+\item \problemans{DSE2015-CoreP2-Q21}
+\item \problemans{DSE2016-CoreP2-Q22}
+\item \problemans{DSE2018-CoreP2-Q22}
+\item \problemans{DSE2022-CoreP2-Q21}
+\item \problemans{DSE2017-CoreP2-Q40}
+\item \problemans{DSE2012P-CoreP1-Q07}
+\item \problemans{DSE2012-CoreP1-Q08}
+\item \problemans{DSE2023-CoreP1-Q07}
+\item \problemans{DSE2019-CoreP1-Q13}
+\item \problemans{DSE2012S-CoreP2-Q22}
+\item \problemans{DSE2012P-CoreP2-Q21}
+\item \problemans{DSE2013-CoreP2-Q19}
+\item \problemans{DSE2014-CoreP2-Q20}
+\item \problemans{DSE2015-CoreP2-Q20}
+\item \problemans{DSE2019-CoreP2-Q21}
+\item \problemans{DSE2020-CoreP2-Q22}
+\item \problemans{DSE2023-CoreP2-Q16}
+\item \problemans{DSE2024-CoreP2-Q22}
+\item \problemans{DSE2018-CoreP1-Q08}
+\item \problemans{DSE2017-CoreP1-Q10}
+\item \problemans{DSE2017-CoreP2-Q21}
+\item \problemans{DSE2021-CoreP2-Q22}
+\item \problemans{DSE2023-CoreP2-Q22}
+\item \problemans{DSE2019-CoreP1-Q19}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Tangents to Circles \NF}
+\lfoot{S5-Ch2}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch2}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Tangents to Circles \NF}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-2}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 2.\arabic*\ ]
+\item \hyperref[section:5-2-1]{Tangents to a Circle and their Properties \NF}
+\item \hyperref[section:5-2-2]{Tangents from an External Point \NF}
+\item \hyperref[section:5-2-3]{Angles in the Alternate Segment \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 2.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 2.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 2.3 &  &  &  &  &  &  &  &  &  &  &  $7$ &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 2.1 &  $1$ &  &  $1$ &  $1$ &  $1$ &  &  &  &  &  $1$ &  &  &  &  &  &  \\\hline
+Sec 2.2 &  &  &  &  &  &  $1$ &  $1$ &  &  &  &  &  &  &  &  &  \\\hline
+Sec 2.3 &  &  &  &  &  &  &  &  &  $1$ &  &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+        & 2.1 & 2.2 & 2.3 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  \\
+\hline
+Paper 1 - B&  &  & \hyperref[DSE2020-CoreP1-Q18]{2020-P1-Q18} \\
+\hline
+\hline
+Paper 2 - A&  &  &  \\
+\hline
+Paper 2 - B& \hyperref[DSE2012S-CoreP2-Q41]{Samp-P2-Q41} & \hyperref[DSE2015-CoreP2-Q40]{2015-P2-Q40} & \hyperref[DSE2018-CoreP2-Q39]{2018-P2-Q39} \\
+& \hyperref[DSE2012-CoreP2-Q41]{2012-P2-Q41} & \hyperref[DSE2016-CoreP2-Q40]{2016-P2-Q40} & \hyperref[DSE2020-CoreP2-Q39]{2020-P2-Q39} \\
+& \hyperref[DSE2013-CoreP2-Q41]{2013-P2-Q41} &  & \hyperref[DSE2021-CoreP2-Q39]{2021-P2-Q39} \\
+& \hyperref[DSE2014-CoreP2-Q41]{2014-P2-Q41} &  & \hyperref[DSE2022-CoreP2-Q38]{2022-P2-Q38} \\
+& \hyperref[DSE2019-CoreP2-Q39]{2019-P2-Q39} &  & \hyperref[DSE2023-CoreP2-Q38]{2023-P2-Q38} \\
+&  &  & \hyperref[DSE2024-CoreP2-Q38]{2024-P2-Q38} \\
+\hline
+\hline
+Cross Topic&  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch2 - 2.1 Tangents to a Circle and their Properties \NF
+\section*{Section 2.1 - Tangents to a Circle and their Properties \NF}\phantomsection\label{section:5-2-1}
+
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q41} \problem[Samp-P2-Q41]{DSE2012S-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q41} \problem[2012-P2-Q41]{DSE2012-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q41} \problem[2013-P2-Q41]{DSE2013-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q41} \problem[2014-P2-Q41]{DSE2014-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q39} \problem[2019-P2-Q39]{DSE2019-CoreP2-Q39}
+\end{enumx}
+
+
+
+
+% S5 Ch2 - 2.2 Tangents from an External Point \NF
+\section*{Section 2.2 - Tangents from an External Point \NF}\phantomsection\label{section:5-2-2}
+
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=6]
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q40} \problem[2015-P2-Q40]{DSE2015-CoreP2-Q40}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q40} \problem[2016-P2-Q40]{DSE2016-CoreP2-Q40}
+\end{enumx}
+
+
+
+
+% S5 Ch2 - 2.3 Angles in the Alternate Segment \NF
+\section*{Section 2.3 - Angles in the Alternate Segment \NF}\phantomsection\label{section:5-2-3}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=8]
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q18} \problem[2020-P1-Q18]{DSE2020-CoreP1-Q18}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=9]
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q39} \problem[2018-P2-Q39]{DSE2018-CoreP2-Q39}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q39} \problem[2020-P2-Q39]{DSE2020-CoreP2-Q39}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q39} \problem[2021-P2-Q39]{DSE2021-CoreP2-Q39}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q38} \problem[2022-P2-Q38]{DSE2022-CoreP2-Q38}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q38} \problem[2023-P2-Q38]{DSE2023-CoreP2-Q38}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q38} \problem[2024-P2-Q38]{DSE2024-CoreP2-Q38}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012S-CoreP2-Q41}
+\item \problemans{DSE2012-CoreP2-Q41}
+\item \problemans{DSE2013-CoreP2-Q41}
+\item \problemans{DSE2014-CoreP2-Q41}
+\item \problemans{DSE2019-CoreP2-Q39}
+\item \problemans{DSE2015-CoreP2-Q40}
+\item \problemans{DSE2016-CoreP2-Q40}
+\item \problemans{DSE2020-CoreP1-Q18}
+\item \problemans{DSE2018-CoreP2-Q39}
+\item \problemans{DSE2020-CoreP2-Q39}
+\item \problemans{DSE2021-CoreP2-Q39}
+\item \problemans{DSE2022-CoreP2-Q38}
+\item \problemans{DSE2023-CoreP2-Q38}
+\item \problemans{DSE2024-CoreP2-Q38}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Inequalities}
+\lfoot{S5-Ch3}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch3}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Inequalities}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-3}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 3.\arabic*\ ]
+\item \hyperref[section:5-3-1]{Compound Linear Inequalities in One Unknown}
+\item \hyperref[section:5-3-2]{Solving Quadratic Inequalities in One Unknown by the Graphical Method}
+\item \hyperref[section:5-3-3]{Solving Quadratic Inequalities in One Unknown by the Algebraic Method \NF}
+\item \hyperref[section:5-3-4]{Problems Leading to Quadratic Inequalities in One Unknown}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 3.1 &  &  &  $4$ &  $4$ &  &  $4$ &  $4$ &  $4$ &  $4$ &  $4$ &  $4$ &  $4$ &  $4$ &  $4$ &  $4$ &  \\\hline
+Sec 3.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 3.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 3.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 3.1 &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  \\\hline
+Sec 3.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 3.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 3.4 &  &  &  &  &  &  &  &  &  &  &  &  $1$ &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+        & 3.1 & 3.2 & 3.3 & 3.4 \\\hline
+\hline
+Paper 1 - A(1)& \hyperref[DSE2012-CoreP1-Q06]{2012-P1-Q6} &  &  &  \\
+& \hyperref[DSE2013-CoreP1-Q05]{2013-P1-Q5} &  &  &  \\
+& \hyperref[DSE2015-CoreP1-Q05]{2015-P1-Q5} &  &  &  \\
+& \hyperref[DSE2016-CoreP1-Q06]{2016-P1-Q6} &  &  &  \\
+& \hyperref[DSE2017-CoreP1-Q05]{2017-P1-Q5} &  &  &  \\
+& \hyperref[DSE2018-CoreP1-Q06]{2018-P1-Q6} &  &  &  \\
+& \hyperref[DSE2019-CoreP1-Q06]{2019-P1-Q6} &  &  &  \\
+& \hyperref[DSE2020-CoreP1-Q06]{2020-P1-Q6} &  &  &  \\
+& \hyperref[DSE2021-CoreP1-Q04]{2021-P1-Q4} &  &  &  \\
+& \hyperref[DSE2022-CoreP1-Q06]{2022-P1-Q6} &  &  &  \\
+& \hyperref[DSE2023-CoreP1-Q04]{2023-P1-Q4} &  &  &  \\
+& \hyperref[DSE2024-CoreP1-Q04]{2024-P1-Q4} &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  &  \\
+\hline
+Paper 1 - B&  &  &  &  \\
+\hline
+\hline
+Paper 2 - A& \hyperref[DSE2012S-CoreP2-Q09]{Samp-P2-Q9} &  &  &  \\
+& \hyperref[DSE2012P-CoreP2-Q09]{Prac-P2-Q9} &  &  &  \\
+& \hyperref[DSE2012-CoreP2-Q07]{2012-P2-Q7} &  &  &  \\
+& \hyperref[DSE2013-CoreP2-Q05]{2013-P2-Q5} &  &  &  \\
+& \hyperref[DSE2014-CoreP2-Q07]{2014-P2-Q7} &  &  &  \\
+& \hyperref[DSE2015-CoreP2-Q06]{2015-P2-Q6} &  &  &  \\
+& \hyperref[DSE2016-CoreP2-Q07]{2016-P2-Q7} &  &  &  \\
+& \hyperref[DSE2017-CoreP2-Q05]{2017-P2-Q5} &  &  &  \\
+& \hyperref[DSE2018-CoreP2-Q13]{2018-P2-Q13} &  &  &  \\
+& \hyperref[DSE2019-CoreP2-Q07]{2019-P2-Q7} &  &  &  \\
+& \hyperref[DSE2020-CoreP2-Q13]{2020-P2-Q13} &  &  &  \\
+& \hyperref[DSE2021-CoreP2-Q10]{2021-P2-Q10} &  &  &  \\
+& \hyperref[DSE2022-CoreP2-Q07]{2022-P2-Q7} &  &  &  \\
+& \hyperref[DSE2023-CoreP2-Q06]{2023-P2-Q6} &  &  &  \\
+& \hyperref[DSE2024-CoreP2-Q10]{2024-P2-Q10} &  &  &  \\
+\hline
+Paper 2 - B&  &  &  & \hyperref[DSE2021-CoreP2-Q37]{2021-P2-Q37} \\
+\hline
+\hline
+Cross Topic&  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch3 - 3.1 Compound Linear Inequalities in One Unknown
+\section*{Section 3.1 - Compound Linear Inequalities in One Unknown}\phantomsection\label{section:5-3-1}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q06} \problem[2012-P1-Q6]{DSE2012-CoreP1-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP1-Q05} \problem[2013-P1-Q5]{DSE2013-CoreP1-Q05}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q05} \problem[2015-P1-Q5]{DSE2015-CoreP1-Q05}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q06} \problem[2016-P1-Q6]{DSE2016-CoreP1-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q05} \problem[2017-P1-Q5]{DSE2017-CoreP1-Q05}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q06} \problem[2018-P1-Q6]{DSE2018-CoreP1-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q06} \problem[2019-P1-Q6]{DSE2019-CoreP1-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q06} \problem[2020-P1-Q6]{DSE2020-CoreP1-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q04} \problem[2021-P1-Q4]{DSE2021-CoreP1-Q04}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q06} \problem[2022-P1-Q6]{DSE2022-CoreP1-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP1-Q04} \problem[2023-P1-Q4]{DSE2023-CoreP1-Q04}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP1-Q04} \problem[2024-P1-Q4]{DSE2024-CoreP1-Q04}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=13]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q09} \problem[Samp-P2-Q9]{DSE2012S-CoreP2-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q09} \problem[Prac-P2-Q9]{DSE2012P-CoreP2-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q07} \problem[2012-P2-Q7]{DSE2012-CoreP2-Q07}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q05} \problem[2013-P2-Q5]{DSE2013-CoreP2-Q05}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q07} \problem[2014-P2-Q7]{DSE2014-CoreP2-Q07}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q06} \problem[2015-P2-Q6]{DSE2015-CoreP2-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q07} \problem[2016-P2-Q7]{DSE2016-CoreP2-Q07}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q05} \problem[2017-P2-Q5]{DSE2017-CoreP2-Q05}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q13} \problem[2018-P2-Q13]{DSE2018-CoreP2-Q13}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q07} \problem[2019-P2-Q7]{DSE2019-CoreP2-Q07}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q13} \problem[2020-P2-Q13]{DSE2020-CoreP2-Q13}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q10} \problem[2021-P2-Q10]{DSE2021-CoreP2-Q10}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q07} \problem[2022-P2-Q7]{DSE2022-CoreP2-Q07}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q06} \problem[2023-P2-Q6]{DSE2023-CoreP2-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q10} \problem[2024-P2-Q10]{DSE2024-CoreP2-Q10}
+\end{enumx}
+
+
+
+
+% S5 Ch3 - 3.2 Solving Quadratic Inequalities in One Unknown by the Graphical Method
+\section*{Section 3.2 - Solving Quadratic Inequalities in One Unknown by the Graphical Method}\phantomsection\label{section:5-3-2}
+
+
+
+
+
+% S5 Ch3 - 3.3 Solving Quadratic Inequalities in One Unknown by the Algebraic Method \NF
+\section*{Section 3.3 - Solving Quadratic Inequalities in One Unknown by the Algebraic Method \NF}\phantomsection\label{section:5-3-3}
+
+
+
+
+
+% S5 Ch3 - 3.4 Problems Leading to Quadratic Inequalities in One Unknown
+\section*{Section 3.4 - Problems Leading to Quadratic Inequalities in One Unknown}\phantomsection\label{section:5-3-4}
+
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=28]
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q37} \problem[2021-P2-Q37]{DSE2021-CoreP2-Q37}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012-CoreP1-Q06}
+\item \problemans{DSE2013-CoreP1-Q05}
+\item \problemans{DSE2015-CoreP1-Q05}
+\item \problemans{DSE2016-CoreP1-Q06}
+\item \problemans{DSE2017-CoreP1-Q05}
+\item \problemans{DSE2018-CoreP1-Q06}
+\item \problemans{DSE2019-CoreP1-Q06}
+\item \problemans{DSE2020-CoreP1-Q06}
+\item \problemans{DSE2021-CoreP1-Q04}
+\item \problemans{DSE2022-CoreP1-Q06}
+\item \problemans{DSE2023-CoreP1-Q04}
+\item \problemans{DSE2024-CoreP1-Q04}
+\item \problemans{DSE2012S-CoreP2-Q09}
+\item \problemans{DSE2012P-CoreP2-Q09}
+\item \problemans{DSE2012-CoreP2-Q07}
+\item \problemans{DSE2013-CoreP2-Q05}
+\item \problemans{DSE2014-CoreP2-Q07}
+\item \problemans{DSE2015-CoreP2-Q06}
+\item \problemans{DSE2016-CoreP2-Q07}
+\item \problemans{DSE2017-CoreP2-Q05}
+\item \problemans{DSE2018-CoreP2-Q13}
+\item \problemans{DSE2019-CoreP2-Q07}
+\item \problemans{DSE2020-CoreP2-Q13}
+\item \problemans{DSE2021-CoreP2-Q10}
+\item \problemans{DSE2022-CoreP2-Q07}
+\item \problemans{DSE2023-CoreP2-Q06}
+\item \problemans{DSE2024-CoreP2-Q10}
+\item \problemans{DSE2021-CoreP2-Q37}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Linear Programming \NF}
+\lfoot{S5-Ch4}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch4}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Linear Programming \NF}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-4}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 4.\arabic*\ ]
+\item \hyperref[section:5-4-1]{Linear Inequalities in Two Unknowns \NF}
+\item \hyperref[section:5-4-2]{Solving Systems of Linear Inequalities in Two Unknowns Graphically \NF}
+\item \hyperref[section:5-4-3]{Linear Programming \NF}
+\item \hyperref[section:5-4-4]{Applications of Linear Programming \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 4.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 4.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 4.3 &  &  &  &  &  &  &  &  &  &  &  &  $5$ &  &  &  &  \\\hline
+Sec 4.4 &  &  &  &  &  $8$ &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 4.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 4.2 &  $1$ &  &  $1$ &  &  &  $1$ &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 4.3 &  &  &  &  $1$ &  &  &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  &  $1$ &  $1$ &  $1$ &  \\\hline
+Sec 4.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+        & 4.1 & 4.2 & 4.3 & 4.4 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  &  \\
+\hline
+Paper 1 - B&  &  & \hyperref[DSE2021-CoreP1-Q16]{2021-P1-Q16} & \hyperref[DSE2014-CoreP1-Q18]{2014-P1-Q18} \\
+\hline
+\hline
+Paper 2 - A&  &  &  &  \\
+\hline
+Paper 2 - B&  & \hyperref[DSE2012S-CoreP2-Q35]{Samp-P2-Q35} & \hyperref[DSE2013-CoreP2-Q37]{2013-P2-Q37} &  \\
+&  & \hyperref[DSE2012-CoreP2-Q36]{2012-P2-Q36} & \hyperref[DSE2016-CoreP2-Q35]{2016-P2-Q35} &  \\
+&  & \hyperref[DSE2015-CoreP2-Q36]{2015-P2-Q36} & \hyperref[DSE2017-CoreP2-Q37]{2017-P2-Q37} &  \\
+&  &  & \hyperref[DSE2018-CoreP2-Q34]{2018-P2-Q34} &  \\
+&  &  & \hyperref[DSE2019-CoreP2-Q35]{2019-P2-Q35} &  \\
+&  &  & \hyperref[DSE2020-CoreP2-Q36]{2020-P2-Q36} &  \\
+&  &  & \hyperref[DSE2022-CoreP2-Q36]{2022-P2-Q36} &  \\
+&  &  & \hyperref[DSE2023-CoreP2-Q37]{2023-P2-Q37} &  \\
+&  &  & \hyperref[DSE2024-CoreP2-Q37]{2024-P2-Q37} &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch4 - 4.1 Linear Inequalities in Two Unknowns \NF
+\section*{Section 4.1 - Linear Inequalities in Two Unknowns \NF}\phantomsection\label{section:5-4-1}
+
+
+
+
+
+% S5 Ch4 - 4.2 Solving Systems of Linear Inequalities in Two Unknowns Graphically \NF
+\section*{Section 4.2 - Solving Systems of Linear Inequalities in Two Unknowns Graphically \NF}\phantomsection\label{section:5-4-2}
+
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q35} \problem[Samp-P2-Q35]{DSE2012S-CoreP2-Q35}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q36} \problem[2012-P2-Q36]{DSE2012-CoreP2-Q36}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q36} \problem[2015-P2-Q36]{DSE2015-CoreP2-Q36}
+\end{enumx}
+
+
+
+
+% S5 Ch4 - 4.3 Linear Programming \NF
+\section*{Section 4.3 - Linear Programming \NF}\phantomsection\label{section:5-4-3}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=4]
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q16} \problem[2021-P1-Q16]{DSE2021-CoreP1-Q16}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=5]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q37} \problem[2013-P2-Q37]{DSE2013-CoreP2-Q37}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q35} \problem[2016-P2-Q35]{DSE2016-CoreP2-Q35}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q37} \problem[2017-P2-Q37]{DSE2017-CoreP2-Q37}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q34} \problem[2018-P2-Q34]{DSE2018-CoreP2-Q34}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q35} \problem[2019-P2-Q35]{DSE2019-CoreP2-Q35}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q36} \problem[2020-P2-Q36]{DSE2020-CoreP2-Q36}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q36} \problem[2022-P2-Q36]{DSE2022-CoreP2-Q36}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q37} \problem[2023-P2-Q37]{DSE2023-CoreP2-Q37}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q37} \problem[2024-P2-Q37]{DSE2024-CoreP2-Q37}
+\end{enumx}
+
+
+
+
+% S5 Ch4 - 4.4 Applications of Linear Programming \NF
+\section*{Section 4.4 - Applications of Linear Programming \NF}\phantomsection\label{section:5-4-4}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=14]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q18} \problem[2014-P1-Q18]{DSE2014-CoreP1-Q18}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012S-CoreP2-Q35}
+\item \problemans{DSE2012-CoreP2-Q36}
+\item \problemans{DSE2015-CoreP2-Q36}
+\item \problemans{DSE2021-CoreP1-Q16}
+\item \problemans{DSE2013-CoreP2-Q37}
+\item \problemans{DSE2016-CoreP2-Q35}
+\item \problemans{DSE2017-CoreP2-Q37}
+\item \problemans{DSE2018-CoreP2-Q34}
+\item \problemans{DSE2019-CoreP2-Q35}
+\item \problemans{DSE2020-CoreP2-Q36}
+\item \problemans{DSE2022-CoreP2-Q36}
+\item \problemans{DSE2023-CoreP2-Q37}
+\item \problemans{DSE2024-CoreP2-Q37}
+\item \problemans{DSE2014-CoreP1-Q18}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Applications of Trigonometry in 2-D problems \NF}
+\lfoot{S5-Ch5}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch5}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Applications of Trigonometry in 2-D problems \NF}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-5}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 5.\arabic*\ ]
+\item \hyperref[section:5-5-1]{Area of a Triangle \NF}
+\item \hyperref[section:5-5-2]{The Sine Formula \NF}
+\item \hyperref[section:5-5-3]{The Cosine Formula \NF}
+\item \hyperref[section:5-5-4]{Trigonometric Problems in Two Dimensions \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 5.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 5.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 5.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 5.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 5.1 &  &  &  &  &  &  &  &  &  &  $1$ &  &  &  &  &  &  \\\hline
+Sec 5.2 &  $2$ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 5.3 &  &  &  &  $1$ &  &  &  &  $2$ &  &  &  &  &  &  &  &  \\\hline
+Sec 5.4 &  &  &  &  &  &  &  &  &  &  &  &  $1$ &  $2$ &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+        & 5.1 & 5.2 & 5.3 & 5.4 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  &  \\
+\hline
+Paper 1 - B&  &  &  &  \\
+\hline
+\hline
+Paper 2 - A&  & \hyperref[DSE2012S-CoreP2-Q24]{Samp-P2-Q24} & \hyperref[DSE2013-CoreP2-Q22]{2013-P2-Q22} & \hyperref[DSE2022-CoreP2-Q16]{2022-P2-Q16} \\
+&  &  & \hyperref[DSE2017-CoreP2-Q25]{2017-P2-Q25} & \hyperref[DSE2022-CoreP2-Q17]{2022-P2-Q17} \\
+\hline
+Paper 2 - B& \hyperref[DSE2019-CoreP2-Q38]{2019-P2-Q38} & \hyperref[DSE2012S-CoreP2-Q38]{Samp-P2-Q38} & \hyperref[DSE2017-CoreP2-Q38]{2017-P2-Q38} & \hyperref[DSE2021-CoreP2-Q38]{2021-P2-Q38} \\
+\hline
+\hline
+Cross Topic&  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch5 - 5.1 Area of a Triangle \NF
+\section*{Section 5.1 - Area of a Triangle \NF}\phantomsection\label{section:5-5-1}
+
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q38} \problem[2019-P2-Q38]{DSE2019-CoreP2-Q38}
+\end{enumx}
+
+
+
+
+% S5 Ch5 - 5.2 The Sine Formula \NF
+\section*{Section 5.2 - The Sine Formula \NF}\phantomsection\label{section:5-5-2}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=2]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q24} \problem[Samp-P2-Q24]{DSE2012S-CoreP2-Q24}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=3]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q38} \problem[Samp-P2-Q38]{DSE2012S-CoreP2-Q38}
+\end{enumx}
+
+
+
+
+% S5 Ch5 - 5.3 The Cosine Formula \NF
+\section*{Section 5.3 - The Cosine Formula \NF}\phantomsection\label{section:5-5-3}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=4]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q22} \problem[2013-P2-Q22]{DSE2013-CoreP2-Q22}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q25} \problem[2017-P2-Q25]{DSE2017-CoreP2-Q25}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=6]
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q38} \problem[2017-P2-Q38]{DSE2017-CoreP2-Q38}
+\end{enumx}
+
+
+
+
+% S5 Ch5 - 5.4 Trigonometric Problems in Two Dimensions \NF
+\section*{Section 5.4 - Trigonometric Problems in Two Dimensions \NF}\phantomsection\label{section:5-5-4}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=7]
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q16} \problem[2022-P2-Q16]{DSE2022-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q17} \problem[2022-P2-Q17]{DSE2022-CoreP2-Q17}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=9]
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q38} \problem[2021-P2-Q38]{DSE2021-CoreP2-Q38}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2019-CoreP2-Q38}
+\item \problemans{DSE2012S-CoreP2-Q24}
+\item \problemans{DSE2012S-CoreP2-Q38}
+\item \problemans{DSE2013-CoreP2-Q22}
+\item \problemans{DSE2017-CoreP2-Q25}
+\item \problemans{DSE2017-CoreP2-Q38}
+\item \problemans{DSE2022-CoreP2-Q16}
+\item \problemans{DSE2022-CoreP2-Q17}
+\item \problemans{DSE2021-CoreP2-Q38}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Applications of Trigonometry in 3-D problems \NF}
+\lfoot{S5-Ch6}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch6}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Applications of Trigonometry in 3-D problems \NF}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-6}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 6.\arabic*\ ]
+\item \hyperref[section:5-6-1]{Basic Terminologies in 3-dimensional Problems \NF}
+\item \hyperref[section:5-6-2]{More Examples on 3-dimensional Problems \NF}
+\item \hyperref[section:5-6-3]{Practical 3-dimensional Problems \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 6.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 6.2 &  &  $8$ &  &  &  &  &  &  &  &  $7$ &  &  $7$ &  &  &  &  \\\hline
+Sec 6.3 &  $8$ &  &  $8$ &  $8$ &  $7$ &  $13$ &  $6$ &  $13$ &  $7$ &  &  $12$ &  &  $7$ &  $6$ &  $8$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 6.1 &  &  &  $1$ &  &  &  &  &  &  &  $1$ &  &  &  &  &  &  \\\hline
+Sec 6.2 &  &  &  &  &  $1$ &  &  $1$ &  &  &  &  &  &  &  &  &  \\\hline
+Sec 6.3 &  $1$ &  $1$ &  &  &  &  &  &  $1$ &  $1$ &  &  $1$ &  &  $1$ &  $1$ &  $1$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+        & 6.1 & 6.2 & 6.3 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  \\
+\hline
+Paper 1 - B&  & \hyperref[DSE2012P-CoreP1-Q18]{Prac-P1-Q18} & \hyperref[DSE2012S-CoreP1-Q18]{Samp-P1-Q18} \\
+&  & \hyperref[DSE2019-CoreP1-Q18]{2019-P1-Q18} & \hyperref[DSE2012-CoreP1-Q18]{2012-P1-Q18} \\
+&  & \hyperref[DSE2021-CoreP1-Q18]{2021-P1-Q18} & \hyperref[DSE2013-CoreP1-Q18]{2013-P1-Q18} \\
+&  &  & \hyperref[DSE2014-CoreP1-Q17]{2014-P1-Q17} \\
+&  &  & \hyperref[DSE2015-CoreP1-Q19]{2015-P1-Q19} \\
+&  &  & \hyperref[DSE2016-CoreP1-Q19]{2016-P1-Q19} \\
+&  &  & \hyperref[DSE2017-CoreP1-Q19]{2017-P1-Q19} \\
+&  &  & \hyperref[DSE2018-CoreP1-Q17]{2018-P1-Q17} \\
+&  &  & \hyperref[DSE2020-CoreP1-Q19]{2020-P1-Q19} \\
+&  &  & \hyperref[DSE2022-CoreP1-Q18]{2022-P1-Q18} \\
+&  &  & \hyperref[DSE2023-CoreP1-Q17]{2023-P1-Q17} \\
+&  &  & \hyperref[DSE2024-CoreP1-Q18]{2024-P1-Q18} \\
+\hline
+\hline
+Paper 2 - A&  &  &  \\
+\hline
+Paper 2 - B& \hyperref[DSE2012-CoreP2-Q40]{2012-P2-Q40} & \hyperref[DSE2014-CoreP2-Q40]{2014-P2-Q40} & \hyperref[DSE2012S-CoreP2-Q40]{Samp-P2-Q40} \\
+& \hyperref[DSE2019-CoreP2-Q40]{2019-P2-Q40} & \hyperref[DSE2016-CoreP2-Q39]{2016-P2-Q39} & \hyperref[DSE2012P-CoreP2-Q39]{Prac-P2-Q39} \\
+&  &  & \hyperref[DSE2017-CoreP2-Q39]{2017-P2-Q39} \\
+&  &  & \hyperref[DSE2018-CoreP2-Q41]{2018-P2-Q41} \\
+&  &  & \hyperref[DSE2020-CoreP2-Q38]{2020-P2-Q38} \\
+&  &  & \hyperref[DSE2022-CoreP2-Q40]{2022-P2-Q40} \\
+&  &  & \hyperref[DSE2023-CoreP2-Q40]{2023-P2-Q40} \\
+&  &  & \hyperref[DSE2024-CoreP2-Q40]{2024-P2-Q40} \\
+\hline
+\hline
+Cross Topic&  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch6 - 6.1 Basic Terminologies in 3-dimensional Problems \NF
+\section*{Section 6.1 - Basic Terminologies in 3-dimensional Problems \NF}\phantomsection\label{section:5-6-1}
+
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q40} \problem[2012-P2-Q40]{DSE2012-CoreP2-Q40}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q40} \problem[2019-P2-Q40]{DSE2019-CoreP2-Q40}
+\end{enumx}
+
+
+
+
+% S5 Ch6 - 6.2 More Examples on 3-dimensional Problems \NF
+\section*{Section 6.2 - More Examples on 3-dimensional Problems \NF}\phantomsection\label{section:5-6-2}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=3]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q18} \problem[Prac-P1-Q18]{DSE2012P-CoreP1-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q18} \problem[2019-P1-Q18]{DSE2019-CoreP1-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q18} \problem[2021-P1-Q18]{DSE2021-CoreP1-Q18}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=6]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q40} \problem[2014-P2-Q40]{DSE2014-CoreP2-Q40}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q39} \problem[2016-P2-Q39]{DSE2016-CoreP2-Q39}
+\end{enumx}
+
+
+
+
+% S5 Ch6 - 6.3 Practical 3-dimensional Problems \NF
+\section*{Section 6.3 - Practical 3-dimensional Problems \NF}\phantomsection\label{section:5-6-3}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=8]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q18} \problem[Samp-P1-Q18]{DSE2012S-CoreP1-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q18} \problem[2012-P1-Q18]{DSE2012-CoreP1-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP1-Q18} \problem[2013-P1-Q18]{DSE2013-CoreP1-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q17} \problem[2014-P1-Q17]{DSE2014-CoreP1-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q19} \problem[2015-P1-Q19]{DSE2015-CoreP1-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q19} \problem[2016-P1-Q19]{DSE2016-CoreP1-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q19} \problem[2017-P1-Q19]{DSE2017-CoreP1-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q17} \problem[2018-P1-Q17]{DSE2018-CoreP1-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q19} \problem[2020-P1-Q19]{DSE2020-CoreP1-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q18} \problem[2022-P1-Q18]{DSE2022-CoreP1-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP1-Q17} \problem[2023-P1-Q17]{DSE2023-CoreP1-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP1-Q18} \problem[2024-P1-Q18]{DSE2024-CoreP1-Q18}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=20]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q40} \problem[Samp-P2-Q40]{DSE2012S-CoreP2-Q40}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q39} \problem[Prac-P2-Q39]{DSE2012P-CoreP2-Q39}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q39} \problem[2017-P2-Q39]{DSE2017-CoreP2-Q39}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q41} \problem[2018-P2-Q41]{DSE2018-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q38} \problem[2020-P2-Q38]{DSE2020-CoreP2-Q38}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q40} \problem[2022-P2-Q40]{DSE2022-CoreP2-Q40}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q40} \problem[2023-P2-Q40]{DSE2023-CoreP2-Q40}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q40} \problem[2024-P2-Q40]{DSE2024-CoreP2-Q40}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012-CoreP2-Q40}
+\item \problemans{DSE2019-CoreP2-Q40}
+\item \problemans{DSE2012P-CoreP1-Q18}
+\item \problemans{DSE2019-CoreP1-Q18}
+\item \problemans{DSE2021-CoreP1-Q18}
+\item \problemans{DSE2014-CoreP2-Q40}
+\item \problemans{DSE2016-CoreP2-Q39}
+\item \problemans{DSE2012S-CoreP1-Q18}
+\item \problemans{DSE2012-CoreP1-Q18}
+\item \problemans{DSE2013-CoreP1-Q18}
+\item \problemans{DSE2014-CoreP1-Q17}
+\item \problemans{DSE2015-CoreP1-Q19}
+\item \problemans{DSE2016-CoreP1-Q19}
+\item \problemans{DSE2017-CoreP1-Q19}
+\item \problemans{DSE2018-CoreP1-Q17}
+\item \problemans{DSE2020-CoreP1-Q19}
+\item \problemans{DSE2022-CoreP1-Q18}
+\item \problemans{DSE2023-CoreP1-Q17}
+\item \problemans{DSE2024-CoreP1-Q18}
+\item \problemans{DSE2012S-CoreP2-Q40}
+\item \problemans{DSE2012P-CoreP2-Q39}
+\item \problemans{DSE2017-CoreP2-Q39}
+\item \problemans{DSE2018-CoreP2-Q41}
+\item \problemans{DSE2020-CoreP2-Q38}
+\item \problemans{DSE2022-CoreP2-Q40}
+\item \problemans{DSE2023-CoreP2-Q40}
+\item \problemans{DSE2024-CoreP2-Q40}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Equations of Circles}
+\lfoot{S5-Ch7}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch7}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Equations of Circles}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-7}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 7.\arabic*\ ]
+\item \hyperref[section:5-7-1]{Equations of Circles}
+\item \hyperref[section:5-7-2]{More about Equations of Circles}
+\item \hyperref[section:5-7-3]{Intersection between a  Straight Line and a Circle \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 7.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 7.2 &  &  $9$ &  $7$ &  &  &  $9$ &  &  &  $12$ &  &  &  &  &  &  &  \\\hline
+Sec 7.3 &  $13$ &  &  &  &  &  &  $12$ &  &  &  &  $9$ &  $12$ &  $12$ &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 7.1 &  &  &  &  &  $1$ &  $1$ &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 7.2 &  &  $1$ &  $1$ &  &  &  &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  &  $1$ &  $1$ &  $1$ &  \\\hline
+Sec 7.3 &  &  $1$ &  $1$ &  $2$ &  $1$ &  $1$ &  $1$ &  &  &  $1$ &  $1$ &  $2$ &  &  $1$ &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+        & 7.1 & 7.2 & 7.3 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  \\
+\hline
+Paper 1 - A(2)&  & \hyperref[DSE2012P-CoreP1-Q14]{Prac-P1-Q14} & \hyperref[DSE2020-CoreP1-Q14]{2020-P1-Q14} \\
+&  & \hyperref[DSE2015-CoreP1-Q14]{2015-P1-Q14} &  \\
+\hline
+Paper 1 - B&  & \hyperref[DSE2012-CoreP1-Q17]{2012-P1-Q17} & \hyperref[DSE2012S-CoreP1-Q19]{Samp-P1-Q19} \\
+&  & \hyperref[DSE2018-CoreP1-Q19]{2018-P1-Q19} & \hyperref[DSE2016-CoreP1-Q20]{2016-P1-Q20} \\
+&  &  & \hyperref[DSE2021-CoreP1-Q19]{2021-P1-Q19} \\
+&  &  & \hyperref[DSE2022-CoreP1-Q19]{2022-P1-Q19} \\
+\hline
+\hline
+Paper 2 - A& \hyperref[DSE2014-CoreP2-Q26]{2014-P2-Q26} & \hyperref[DSE2012P-CoreP2-Q27]{Prac-P2-Q27} & \hyperref[DSE2013-CoreP2-Q25]{2013-P2-Q25} \\
+& \hyperref[DSE2015-CoreP2-Q26]{2015-P2-Q26} & \hyperref[DSE2012-CoreP2-Q26]{2012-P2-Q26} & \hyperref[DSE2021-CoreP2-Q27]{2021-P2-Q27} \\
+&  & \hyperref[DSE2016-CoreP2-Q27]{2016-P2-Q27} &  \\
+&  & \hyperref[DSE2017-CoreP2-Q26]{2017-P2-Q26} &  \\
+&  & \hyperref[DSE2018-CoreP2-Q27]{2018-P2-Q27} &  \\
+&  & \hyperref[DSE2019-CoreP2-Q27]{2019-P2-Q27} &  \\
+&  & \hyperref[DSE2020-CoreP2-Q27]{2020-P2-Q27} &  \\
+&  & \hyperref[DSE2022-CoreP2-Q27]{2022-P2-Q27} &  \\
+&  & \hyperref[DSE2023-CoreP2-Q27]{2023-P2-Q27} &  \\
+&  & \hyperref[DSE2024-CoreP2-Q27]{2024-P2-Q27} &  \\
+\hline
+Paper 2 - B&  &  & \hyperref[DSE2012P-CoreP2-Q41]{Prac-P2-Q41} \\
+&  &  & \hyperref[DSE2012-CoreP2-Q42]{2012-P2-Q42} \\
+&  &  & \hyperref[DSE2013-CoreP2-Q42]{2013-P2-Q42} \\
+&  &  & \hyperref[DSE2014-CoreP2-Q42]{2014-P2-Q42} \\
+&  &  & \hyperref[DSE2015-CoreP2-Q41]{2015-P2-Q41} \\
+&  &  & \hyperref[DSE2016-CoreP2-Q41]{2016-P2-Q41} \\
+&  &  & \hyperref[DSE2019-CoreP2-Q37]{2019-P2-Q37} \\
+&  &  & \hyperref[DSE2020-CoreP2-Q41]{2020-P2-Q41} \\
+&  &  & \hyperref[DSE2021-CoreP2-Q40]{2021-P2-Q40} \\
+&  &  & \hyperref[DSE2023-CoreP2-Q39]{2023-P2-Q39} \\
+\hline
+\hline
+Cross Topic&  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch7 - 7.1 Equations of Circles
+\section*{Section 7.1 - Equations of Circles}\phantomsection\label{section:5-7-1}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q26} \problem[2014-P2-Q26]{DSE2014-CoreP2-Q26}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q26} \problem[2015-P2-Q26]{DSE2015-CoreP2-Q26}
+\end{enumx}
+
+
+
+
+% S5 Ch7 - 7.2 More about Equations of Circles
+\section*{Section 7.2 - More about Equations of Circles}\phantomsection\label{section:5-7-2}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=3]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q14} \problem[Prac-P1-Q14]{DSE2012P-CoreP1-Q14}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q14} \problem[2015-P1-Q14]{DSE2015-CoreP1-Q14}
+\end{enumx}
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=5]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q17} \problem[2012-P1-Q17]{DSE2012-CoreP1-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q19} \problem[2018-P1-Q19]{DSE2018-CoreP1-Q19}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=7]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q27} \problem[Prac-P2-Q27]{DSE2012P-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q26} \problem[2012-P2-Q26]{DSE2012-CoreP2-Q26}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q27} \problem[2016-P2-Q27]{DSE2016-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q26} \problem[2017-P2-Q26]{DSE2017-CoreP2-Q26}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q27} \problem[2018-P2-Q27]{DSE2018-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q27} \problem[2019-P2-Q27]{DSE2019-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q27} \problem[2020-P2-Q27]{DSE2020-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q27} \problem[2022-P2-Q27]{DSE2022-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q27} \problem[2023-P2-Q27]{DSE2023-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q27} \problem[2024-P2-Q27]{DSE2024-CoreP2-Q27}
+\end{enumx}
+
+
+
+
+% S5 Ch7 - 7.3 Intersection between a  Straight Line and a Circle \NF
+\section*{Section 7.3 - Intersection between a  Straight Line and a Circle \NF}\phantomsection\label{section:5-7-3}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=17]
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q14} \problem[2020-P1-Q14]{DSE2020-CoreP1-Q14}
+\end{enumx}
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=18]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q19} \problem[Samp-P1-Q19]{DSE2012S-CoreP1-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q20} \problem[2016-P1-Q20]{DSE2016-CoreP1-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q19} \problem[2021-P1-Q19]{DSE2021-CoreP1-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q19} \problem[2022-P1-Q19]{DSE2022-CoreP1-Q19}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=22]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q25} \problem[2013-P2-Q25]{DSE2013-CoreP2-Q25}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q27} \problem[2021-P2-Q27]{DSE2021-CoreP2-Q27}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=24]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q41} \problem[Prac-P2-Q41]{DSE2012P-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q42} \problem[2012-P2-Q42]{DSE2012-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q42} \problem[2013-P2-Q42]{DSE2013-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q42} \problem[2014-P2-Q42]{DSE2014-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q41} \problem[2015-P2-Q41]{DSE2015-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q41} \problem[2016-P2-Q41]{DSE2016-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q37} \problem[2019-P2-Q37]{DSE2019-CoreP2-Q37}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q41} \problem[2020-P2-Q41]{DSE2020-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q40} \problem[2021-P2-Q40]{DSE2021-CoreP2-Q40}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q39} \problem[2023-P2-Q39]{DSE2023-CoreP2-Q39}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2014-CoreP2-Q26}
+\item \problemans{DSE2015-CoreP2-Q26}
+\item \problemans{DSE2012P-CoreP1-Q14}
+\item \problemans{DSE2015-CoreP1-Q14}
+\item \problemans{DSE2012-CoreP1-Q17}
+\item \problemans{DSE2018-CoreP1-Q19}
+\item \problemans{DSE2012P-CoreP2-Q27}
+\item \problemans{DSE2012-CoreP2-Q26}
+\item \problemans{DSE2016-CoreP2-Q27}
+\item \problemans{DSE2017-CoreP2-Q26}
+\item \problemans{DSE2018-CoreP2-Q27}
+\item \problemans{DSE2019-CoreP2-Q27}
+\item \problemans{DSE2020-CoreP2-Q27}
+\item \problemans{DSE2022-CoreP2-Q27}
+\item \problemans{DSE2023-CoreP2-Q27}
+\item \problemans{DSE2024-CoreP2-Q27}
+\item \problemans{DSE2020-CoreP1-Q14}
+\item \problemans{DSE2012S-CoreP1-Q19}
+\item \problemans{DSE2016-CoreP1-Q20}
+\item \problemans{DSE2021-CoreP1-Q19}
+\item \problemans{DSE2022-CoreP1-Q19}
+\item \problemans{DSE2013-CoreP2-Q25}
+\item \problemans{DSE2021-CoreP2-Q27}
+\item \problemans{DSE2012P-CoreP2-Q41}
+\item \problemans{DSE2012-CoreP2-Q42}
+\item \problemans{DSE2013-CoreP2-Q42}
+\item \problemans{DSE2014-CoreP2-Q42}
+\item \problemans{DSE2015-CoreP2-Q41}
+\item \problemans{DSE2016-CoreP2-Q41}
+\item \problemans{DSE2019-CoreP2-Q37}
+\item \problemans{DSE2020-CoreP2-Q41}
+\item \problemans{DSE2021-CoreP2-Q40}
+\item \problemans{DSE2023-CoreP2-Q39}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Locus}
+\lfoot{S5-Ch8}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch8}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Locus}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-8}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 8.\arabic*\ ]
+\item \hyperref[section:5-8-1]{Concept of a Locus}
+\item \hyperref[section:5-8-2]{Sketch and Description of a Locus}
+\item \hyperref[section:5-8-3]{Algebraic Equation of a Locus}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 8.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.3 &  $9$ &  $5$ &  $9$ &  $9$ &  $7$ &  &  $5$ &  $7$ &  &  $7$ &  &  $7$ &  $7$ &  $6$ &  $8$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 8.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.2 &  &  &  $1$ &  &  $1$ &  $1$ &  &  &  &  $1$ &  &  &  &  &  &  \\\hline
+Sec 8.3 &  &  &  &  $1$ &  &  &  &  $1$ &  $1$ &  &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+        & 8.1 & 8.2 & 8.3 \\\hline
+\hline
+Paper 1 - A(1)&  &  & \hyperref[DSE2012P-CoreP1-Q08]{Prac-P1-Q8} \\
+\hline
+Paper 1 - A(2)&  &  & \hyperref[DSE2012S-CoreP1-Q13]{Samp-P1-Q13} \\
+&  &  & \hyperref[DSE2012-CoreP1-Q14]{2012-P1-Q14} \\
+&  &  & \hyperref[DSE2013-CoreP1-Q14]{2013-P1-Q14} \\
+&  &  & \hyperref[DSE2014-CoreP1-Q12]{2014-P1-Q12} \\
+&  &  & \hyperref[DSE2016-CoreP1-Q10]{2016-P1-Q10} \\
+&  &  & \hyperref[DSE2017-CoreP1-Q13]{2017-P1-Q13} \\
+&  &  & \hyperref[DSE2021-CoreP1-Q13]{2021-P1-Q13} \\
+&  &  & \hyperref[DSE2022-CoreP1-Q12]{2022-P1-Q12} \\
+&  &  & \hyperref[DSE2023-CoreP1-Q10]{2023-P1-Q10} \\
+\hline
+Paper 1 - B&  &  & \hyperref[DSE2019-CoreP1-Q17]{2019-P1-Q17} \\
+&  &  & \hyperref[DSE2024-CoreP1-Q17]{2024-P1-Q17} \\
+\hline
+\hline
+Paper 2 - A&  & \hyperref[DSE2012-CoreP2-Q24]{2012-P2-Q24} & \hyperref[DSE2013-CoreP2-Q24]{2013-P2-Q24} \\
+&  & \hyperref[DSE2014-CoreP2-Q24]{2014-P2-Q24} & \hyperref[DSE2017-CoreP2-Q27]{2017-P2-Q27} \\
+&  & \hyperref[DSE2015-CoreP2-Q24]{2015-P2-Q24} & \hyperref[DSE2018-CoreP2-Q25]{2018-P2-Q25} \\
+&  & \hyperref[DSE2019-CoreP2-Q26]{2019-P2-Q26} & \hyperref[DSE2020-CoreP2-Q25]{2020-P2-Q25} \\
+&  &  & \hyperref[DSE2021-CoreP2-Q25]{2021-P2-Q25} \\
+&  &  & \hyperref[DSE2022-CoreP2-Q26]{2022-P2-Q26} \\
+&  &  & \hyperref[DSE2023-CoreP2-Q26]{2023-P2-Q26} \\
+&  &  & \hyperref[DSE2024-CoreP2-Q25]{2024-P2-Q25} \\
+\hline
+Paper 2 - B&  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch8 - 8.1 Concept of a Locus
+\section*{Section 8.1 - Concept of a Locus}\phantomsection\label{section:5-8-1}
+
+
+
+
+
+% S5 Ch8 - 8.2 Sketch and Description of a Locus
+\section*{Section 8.2 - Sketch and Description of a Locus}\phantomsection\label{section:5-8-2}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q24} \problem[2012-P2-Q24]{DSE2012-CoreP2-Q24}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q24} \problem[2014-P2-Q24]{DSE2014-CoreP2-Q24}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q24} \problem[2015-P2-Q24]{DSE2015-CoreP2-Q24}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q26} \problem[2019-P2-Q26]{DSE2019-CoreP2-Q26}
+\end{enumx}
+
+
+
+
+% S5 Ch8 - 8.3 Algebraic Equation of a Locus
+\section*{Section 8.3 - Algebraic Equation of a Locus}\phantomsection\label{section:5-8-3}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=5]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q08} \problem[Prac-P1-Q8]{DSE2012P-CoreP1-Q08}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=6]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q13} \problem[Samp-P1-Q13]{DSE2012S-CoreP1-Q13}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q14} \problem[2012-P1-Q14]{DSE2012-CoreP1-Q14}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP1-Q14} \problem[2013-P1-Q14]{DSE2013-CoreP1-Q14}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q12} \problem[2014-P1-Q12]{DSE2014-CoreP1-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q10} \problem[2016-P1-Q10]{DSE2016-CoreP1-Q10}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q13} \problem[2017-P1-Q13]{DSE2017-CoreP1-Q13}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q13} \problem[2021-P1-Q13]{DSE2021-CoreP1-Q13}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q12} \problem[2022-P1-Q12]{DSE2022-CoreP1-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP1-Q10} \problem[2023-P1-Q10]{DSE2023-CoreP1-Q10}
+\end{enumx}
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=15]
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q17} \problem[2019-P1-Q17]{DSE2019-CoreP1-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP1-Q17} \problem[2024-P1-Q17]{DSE2024-CoreP1-Q17}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=17]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q24} \problem[2013-P2-Q24]{DSE2013-CoreP2-Q24}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q27} \problem[2017-P2-Q27]{DSE2017-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q25} \problem[2018-P2-Q25]{DSE2018-CoreP2-Q25}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q25} \problem[2020-P2-Q25]{DSE2020-CoreP2-Q25}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q25} \problem[2021-P2-Q25]{DSE2021-CoreP2-Q25}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q26} \problem[2022-P2-Q26]{DSE2022-CoreP2-Q26}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q26} \problem[2023-P2-Q26]{DSE2023-CoreP2-Q26}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q25} \problem[2024-P2-Q25]{DSE2024-CoreP2-Q25}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012-CoreP2-Q24}
+\item \problemans{DSE2014-CoreP2-Q24}
+\item \problemans{DSE2015-CoreP2-Q24}
+\item \problemans{DSE2019-CoreP2-Q26}
+\item \problemans{DSE2012P-CoreP1-Q08}
+\item \problemans{DSE2012S-CoreP1-Q13}
+\item \problemans{DSE2012-CoreP1-Q14}
+\item \problemans{DSE2013-CoreP1-Q14}
+\item \problemans{DSE2014-CoreP1-Q12}
+\item \problemans{DSE2016-CoreP1-Q10}
+\item \problemans{DSE2017-CoreP1-Q13}
+\item \problemans{DSE2021-CoreP1-Q13}
+\item \problemans{DSE2022-CoreP1-Q12}
+\item \problemans{DSE2023-CoreP1-Q10}
+\item \problemans{DSE2019-CoreP1-Q17}
+\item \problemans{DSE2024-CoreP1-Q17}
+\item \problemans{DSE2013-CoreP2-Q24}
+\item \problemans{DSE2017-CoreP2-Q27}
+\item \problemans{DSE2018-CoreP2-Q25}
+\item \problemans{DSE2020-CoreP2-Q25}
+\item \problemans{DSE2021-CoreP2-Q25}
+\item \problemans{DSE2022-CoreP2-Q26}
+\item \problemans{DSE2023-CoreP2-Q26}
+\item \problemans{DSE2024-CoreP2-Q25}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Measures of Dispersion}
+\lfoot{S5-Ch9}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch9}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Measures of Dispersion}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-9}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 9.\arabic*\ ]
+\item \hyperref[section:5-9-1]{Introduction to Measures of Dispersion}
+\item \hyperref[section:5-9-2]{Range and Inter-quartile Range}
+\item \hyperref[section:5-9-3]{Box-and-Whisker Diagram}
+\item \hyperref[section:5-9-4]{Standard Deviation}
+\item \hyperref[section:5-9-5]{Comparing Dispersions Using Appropriate Measures}
+\item \hyperref[section:5-9-6]{Applications of Standard  Deviation \NF}
+\item \hyperref[section:5-9-7]{Effects of Data Change on  Measures of Dispersion \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 9.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 9.2 &  &  $5$ &  &  &  &  $7$ &  $7$ &  &  &  &  $6$ &  &  &  &  $7$ &  \\\hline
+Sec 9.3 &  &  &  $4$ &  $4$ &  $6$ &  &  &  &  $5$ &  &  &  &  &  &  &  \\\hline
+Sec 9.4 &  &  &  &  $5$ &  $3$ &  &  &  $7$ &  &  $8$ &  $5$ &  $5$ &  &  $7$ &  &  \\\hline
+Sec 9.5 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 9.6 &  &  $4$ &  $3$ &  &  &  $4$ &  $3$ &  &  &  &  &  &  &  &  &  \\\hline
+Sec 9.7 &  $7$ &  &  &  &  &  &  &  &  &  &  &  &  $7$ &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 9.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 9.2 &  &  &  &  &  $1$ &  &  &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  &  &  \\\hline
+Sec 9.3 &  $1$ &  $1$ &  &  $1$ &  &  $1$ &  &  $1$ &  &  $1$ &  &  &  &  $1$ &  $1$ &  \\\hline
+Sec 9.4 &  &  $1$ &  $1$ &  &  &  &  $1$ &  &  &  &  &  &  &  &  $1$ &  \\\hline
+Sec 9.5 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 9.6 &  &  &  &  &  $1$ &  &  &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  \\\hline
+Sec 9.7 &  $2$ &  $2$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  $1$ &  &  $1$ &  $1$ &  &  $1$ &  $1$ &  $1$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+        & 9.1 & 9.2 & 9.3 & 9.4 & 9.5 & 9.6 & 9.7 \\\hline
+\hline
+Paper 1 - A(1)&  & \hyperref[DSE2012P-CoreP1-Q09]{Prac-P1-Q9} & \hyperref[DSE2012-CoreP1-Q07]{2012-P1-Q7} & \hyperref[DSE2013-CoreP1-Q09]{2013-P1-Q9} &  &  &  \\
+&  &  &  & \hyperref[DSE2014-CoreP1-Q04]{2014-P1-Q4} &  &  &  \\
+&  &  &  & \hyperref[DSE2020-CoreP1-Q09]{2020-P1-Q9} &  &  &  \\
+&  &  &  & \hyperref[DSE2021-CoreP1-Q09]{2021-P1-Q9} &  &  &  \\
+\hline
+Paper 1 - A(2)&  & \hyperref[DSE2015-CoreP1-Q12]{2015-P1-Q12} & \hyperref[DSE2014-CoreP1-Q11]{2014-P1-Q11} & \hyperref[DSE2017-CoreP1-Q11]{2017-P1-Q11} &  &  & \hyperref[DSE2012S-CoreP1-Q14]{Samp-P1-Q14} \\
+&  & \hyperref[DSE2016-CoreP1-Q12]{2016-P1-Q12} & \hyperref[DSE2018-CoreP1-Q10]{2018-P1-Q10} & \hyperref[DSE2019-CoreP1-Q12]{2019-P1-Q12} &  &  & \hyperref[DSE2022-CoreP1-Q11]{2022-P1-Q11} \\
+&  & \hyperref[DSE2020-CoreP1-Q11]{2020-P1-Q11} &  & \hyperref[DSE2023-CoreP1-Q11]{2023-P1-Q11} &  &  &  \\
+&  & \hyperref[DSE2024-CoreP1-Q11]{2024-P1-Q11} &  &  &  &  &  \\
+\hline
+Paper 1 - B&  &  & \hyperref[DSE2013-CoreP1-Q15]{2013-P1-Q15} &  &  & \hyperref[DSE2012P-CoreP1-Q15]{Prac-P1-Q15} &  \\
+&  &  &  &  &  & \hyperref[DSE2012-CoreP1-Q15]{2012-P1-Q15} &  \\
+&  &  &  &  &  & \hyperref[DSE2015-CoreP1-Q15]{2015-P1-Q15} &  \\
+&  &  &  &  &  & \hyperref[DSE2016-CoreP1-Q16]{2016-P1-Q16} &  \\
+\hline
+\hline
+Paper 2 - A&  & \hyperref[DSE2014-CoreP2-Q30]{2014-P2-Q30} & \hyperref[DSE2012S-CoreP2-Q27]{Samp-P2-Q27} & \hyperref[DSE2012P-CoreP2-Q30]{Prac-P2-Q30} &  &  & \hyperref[DSE2012S-CoreP2-Q29]{Samp-P2-Q29} \\
+&  & \hyperref[DSE2017-CoreP2-Q30]{2017-P2-Q30} & \hyperref[DSE2012P-CoreP2-Q29]{Prac-P2-Q29} & \hyperref[DSE2012-CoreP2-Q29]{2012-P2-Q29} &  &  &  \\
+&  & \hyperref[DSE2018-CoreP2-Q30]{2018-P2-Q30} & \hyperref[DSE2013-CoreP2-Q29]{2013-P2-Q29} & \hyperref[DSE2024-CoreP2-Q30]{2024-P2-Q30} &  &  &  \\
+&  & \hyperref[DSE2019-CoreP2-Q30]{2019-P2-Q30} & \hyperref[DSE2015-CoreP2-Q29]{2015-P2-Q29} &  &  &  &  \\
+&  & \hyperref[DSE2020-CoreP2-Q29]{2020-P2-Q29} & \hyperref[DSE2017-CoreP2-Q29]{2017-P2-Q29} &  &  &  &  \\
+&  & \hyperref[DSE2021-CoreP2-Q29]{2021-P2-Q29} & \hyperref[DSE2019-CoreP2-Q29]{2019-P2-Q29} &  &  &  &  \\
+&  & \hyperref[DSE2022-CoreP2-Q30]{2022-P2-Q30} & \hyperref[DSE2023-CoreP2-Q29]{2023-P2-Q29} &  &  &  &  \\
+&  &  & \hyperref[DSE2024-CoreP2-Q29]{2024-P2-Q29} &  &  &  &  \\
+\hline
+Paper 2 - B&  &  &  & \hyperref[DSE2016-CoreP2-Q44]{2016-P2-Q44} &  & \hyperref[DSE2014-CoreP2-Q44]{2014-P2-Q44} & \hyperref[DSE2012S-CoreP2-Q45]{Samp-P2-Q45} \\
+&  &  &  &  &  & \hyperref[DSE2017-CoreP2-Q44]{2017-P2-Q44} & \hyperref[DSE2012P-CoreP2-Q44]{Prac-P2-Q44} \\
+&  &  &  &  &  & \hyperref[DSE2018-CoreP2-Q44]{2018-P2-Q44} & \hyperref[DSE2012P-CoreP2-Q45]{Prac-P2-Q45} \\
+&  &  &  &  &  & \hyperref[DSE2019-CoreP2-Q44]{2019-P2-Q44} & \hyperref[DSE2012-CoreP2-Q45]{2012-P2-Q45} \\
+&  &  &  &  &  & \hyperref[DSE2020-CoreP2-Q44]{2020-P2-Q44} & \hyperref[DSE2013-CoreP2-Q45]{2013-P2-Q45} \\
+&  &  &  &  &  & \hyperref[DSE2021-CoreP2-Q44]{2021-P2-Q44} & \hyperref[DSE2014-CoreP2-Q45]{2014-P2-Q45} \\
+&  &  &  &  &  & \hyperref[DSE2022-CoreP2-Q44]{2022-P2-Q44} & \hyperref[DSE2015-CoreP2-Q45]{2015-P2-Q45} \\
+&  &  &  &  &  & \hyperref[DSE2023-CoreP2-Q44]{2023-P2-Q44} & \hyperref[DSE2016-CoreP2-Q45]{2016-P2-Q45} \\
+&  &  &  &  &  & \hyperref[DSE2024-CoreP2-Q44]{2024-P2-Q44} & \hyperref[DSE2017-CoreP2-Q45]{2017-P2-Q45} \\
+&  &  &  &  &  &  & \hyperref[DSE2019-CoreP2-Q45]{2019-P2-Q45} \\
+&  &  &  &  &  &  & \hyperref[DSE2020-CoreP2-Q45]{2020-P2-Q45} \\
+&  &  &  &  &  &  & \hyperref[DSE2022-CoreP2-Q45]{2022-P2-Q45} \\
+&  &  &  &  &  &  & \hyperref[DSE2023-CoreP2-Q45]{2023-P2-Q45} \\
+&  &  &  &  &  &  & \hyperref[DSE2024-CoreP2-Q45]{2024-P2-Q45} \\
+\hline
+\hline
+Cross Topic&  &  &  &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch9 - 9.1 Introduction to Measures of Dispersion
+\section*{Section 9.1 - Introduction to Measures of Dispersion}\phantomsection\label{section:5-9-1}
+
+
+
+
+
+% S5 Ch9 - 9.2 Range and Inter-quartile Range
+\section*{Section 9.2 - Range and Inter-quartile Range}\phantomsection\label{section:5-9-2}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q09} \problem[Prac-P1-Q9]{DSE2012P-CoreP1-Q09}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=2]
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q12} \problem[2015-P1-Q12]{DSE2015-CoreP1-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q12} \problem[2016-P1-Q12]{DSE2016-CoreP1-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q11} \problem[2020-P1-Q11]{DSE2020-CoreP1-Q11}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP1-Q11} \problem[2024-P1-Q11]{DSE2024-CoreP1-Q11}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=6]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q30} \problem[2014-P2-Q30]{DSE2014-CoreP2-Q30}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q30} \problem[2017-P2-Q30]{DSE2017-CoreP2-Q30}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q30} \problem[2018-P2-Q30]{DSE2018-CoreP2-Q30}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q30} \problem[2019-P2-Q30]{DSE2019-CoreP2-Q30}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q29} \problem[2020-P2-Q29]{DSE2020-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q29} \problem[2021-P2-Q29]{DSE2021-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q30} \problem[2022-P2-Q30]{DSE2022-CoreP2-Q30}
+\end{enumx}
+
+
+
+
+% S5 Ch9 - 9.3 Box-and-Whisker Diagram
+\section*{Section 9.3 - Box-and-Whisker Diagram}\phantomsection\label{section:5-9-3}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=13]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q07} \problem[2012-P1-Q7]{DSE2012-CoreP1-Q07}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=14]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q11} \problem[2014-P1-Q11]{DSE2014-CoreP1-Q11}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q10} \problem[2018-P1-Q10]{DSE2018-CoreP1-Q10}
+\end{enumx}
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=16]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP1-Q15} \problem[2013-P1-Q15]{DSE2013-CoreP1-Q15}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=17]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q27} \problem[Samp-P2-Q27]{DSE2012S-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q29} \problem[Prac-P2-Q29]{DSE2012P-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q29} \problem[2013-P2-Q29]{DSE2013-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q29} \problem[2015-P2-Q29]{DSE2015-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q29} \problem[2017-P2-Q29]{DSE2017-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q29} \problem[2019-P2-Q29]{DSE2019-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q29} \problem[2023-P2-Q29]{DSE2023-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q29} \problem[2024-P2-Q29]{DSE2024-CoreP2-Q29}
+\end{enumx}
+
+
+
+
+% S5 Ch9 - 9.4 Standard Deviation
+\section*{Section 9.4 - Standard Deviation}\phantomsection\label{section:5-9-4}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=25]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP1-Q09} \problem[2013-P1-Q9]{DSE2013-CoreP1-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q04} \problem[2014-P1-Q4]{DSE2014-CoreP1-Q04}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q09} \problem[2020-P1-Q9]{DSE2020-CoreP1-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q09} \problem[2021-P1-Q9]{DSE2021-CoreP1-Q09}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=29]
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q11} \problem[2017-P1-Q11]{DSE2017-CoreP1-Q11}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q12} \problem[2019-P1-Q12]{DSE2019-CoreP1-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP1-Q11} \problem[2023-P1-Q11]{DSE2023-CoreP1-Q11}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=32]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q30} \problem[Prac-P2-Q30]{DSE2012P-CoreP2-Q30}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q29} \problem[2012-P2-Q29]{DSE2012-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q30} \problem[2024-P2-Q30]{DSE2024-CoreP2-Q30}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=35]
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q44} \problem[2016-P2-Q44]{DSE2016-CoreP2-Q44}
+\end{enumx}
+
+
+
+
+% S5 Ch9 - 9.5 Comparing Dispersions Using Appropriate Measures
+\section*{Section 9.5 - Comparing Dispersions Using Appropriate Measures}\phantomsection\label{section:5-9-5}
+
+
+
+
+
+% S5 Ch9 - 9.6 Applications of Standard  Deviation \NF
+\section*{Section 9.6 - Applications of Standard  Deviation \NF}\phantomsection\label{section:5-9-6}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=36]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q15} \problem[Prac-P1-Q15]{DSE2012P-CoreP1-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q15} \problem[2012-P1-Q15]{DSE2012-CoreP1-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q15} \problem[2015-P1-Q15]{DSE2015-CoreP1-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q16} \problem[2016-P1-Q16]{DSE2016-CoreP1-Q16}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=40]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q44} \problem[2014-P2-Q44]{DSE2014-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q44} \problem[2017-P2-Q44]{DSE2017-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q44} \problem[2018-P2-Q44]{DSE2018-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q44} \problem[2019-P2-Q44]{DSE2019-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q44} \problem[2020-P2-Q44]{DSE2020-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q44} \problem[2021-P2-Q44]{DSE2021-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q44} \problem[2022-P2-Q44]{DSE2022-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q44} \problem[2023-P2-Q44]{DSE2023-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q44} \problem[2024-P2-Q44]{DSE2024-CoreP2-Q44}
+\end{enumx}
+
+
+
+
+% S5 Ch9 - 9.7 Effects of Data Change on  Measures of Dispersion \NF
+\section*{Section 9.7 - Effects of Data Change on  Measures of Dispersion \NF}\phantomsection\label{section:5-9-7}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=49]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q14} \problem[Samp-P1-Q14]{DSE2012S-CoreP1-Q14}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q11} \problem[2022-P1-Q11]{DSE2022-CoreP1-Q11}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=51]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q29} \problem[Samp-P2-Q29]{DSE2012S-CoreP2-Q29}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=52]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q45} \problem[Samp-P2-Q45]{DSE2012S-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q44} \problem[Prac-P2-Q44]{DSE2012P-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q45} \problem[Prac-P2-Q45]{DSE2012P-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q45} \problem[2012-P2-Q45]{DSE2012-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q45} \problem[2013-P2-Q45]{DSE2013-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q45} \problem[2014-P2-Q45]{DSE2014-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q45} \problem[2015-P2-Q45]{DSE2015-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q45} \problem[2016-P2-Q45]{DSE2016-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q45} \problem[2017-P2-Q45]{DSE2017-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q45} \problem[2019-P2-Q45]{DSE2019-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q45} \problem[2020-P2-Q45]{DSE2020-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q45} \problem[2022-P2-Q45]{DSE2022-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q45} \problem[2023-P2-Q45]{DSE2023-CoreP2-Q45}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q45} \problem[2024-P2-Q45]{DSE2024-CoreP2-Q45}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012P-CoreP1-Q09}
+\item \problemans{DSE2015-CoreP1-Q12}
+\item \problemans{DSE2016-CoreP1-Q12}
+\item \problemans{DSE2020-CoreP1-Q11}
+\item \problemans{DSE2024-CoreP1-Q11}
+\item \problemans{DSE2014-CoreP2-Q30}
+\item \problemans{DSE2017-CoreP2-Q30}
+\item \problemans{DSE2018-CoreP2-Q30}
+\item \problemans{DSE2019-CoreP2-Q30}
+\item \problemans{DSE2020-CoreP2-Q29}
+\item \problemans{DSE2021-CoreP2-Q29}
+\item \problemans{DSE2022-CoreP2-Q30}
+\item \problemans{DSE2012-CoreP1-Q07}
+\item \problemans{DSE2014-CoreP1-Q11}
+\item \problemans{DSE2018-CoreP1-Q10}
+\item \problemans{DSE2013-CoreP1-Q15}
+\item \problemans{DSE2012S-CoreP2-Q27}
+\item \problemans{DSE2012P-CoreP2-Q29}
+\item \problemans{DSE2013-CoreP2-Q29}
+\item \problemans{DSE2015-CoreP2-Q29}
+\item \problemans{DSE2017-CoreP2-Q29}
+\item \problemans{DSE2019-CoreP2-Q29}
+\item \problemans{DSE2023-CoreP2-Q29}
+\item \problemans{DSE2024-CoreP2-Q29}
+\item \problemans{DSE2013-CoreP1-Q09}
+\item \problemans{DSE2014-CoreP1-Q04}
+\item \problemans{DSE2020-CoreP1-Q09}
+\item \problemans{DSE2021-CoreP1-Q09}
+\item \problemans{DSE2017-CoreP1-Q11}
+\item \problemans{DSE2019-CoreP1-Q12}
+\item \problemans{DSE2023-CoreP1-Q11}
+\item \problemans{DSE2012P-CoreP2-Q30}
+\item \problemans{DSE2012-CoreP2-Q29}
+\item \problemans{DSE2024-CoreP2-Q30}
+\item \problemans{DSE2016-CoreP2-Q44}
+\item \problemans{DSE2012P-CoreP1-Q15}
+\item \problemans{DSE2012-CoreP1-Q15}
+\item \problemans{DSE2015-CoreP1-Q15}
+\item \problemans{DSE2016-CoreP1-Q16}
+\item \problemans{DSE2014-CoreP2-Q44}
+\item \problemans{DSE2017-CoreP2-Q44}
+\item \problemans{DSE2018-CoreP2-Q44}
+\item \problemans{DSE2019-CoreP2-Q44}
+\item \problemans{DSE2020-CoreP2-Q44}
+\item \problemans{DSE2021-CoreP2-Q44}
+\item \problemans{DSE2022-CoreP2-Q44}
+\item \problemans{DSE2023-CoreP2-Q44}
+\item \problemans{DSE2024-CoreP2-Q44}
+\item \problemans{DSE2012S-CoreP1-Q14}
+\item \problemans{DSE2022-CoreP1-Q11}
+\item \problemans{DSE2012S-CoreP2-Q29}
+\item \problemans{DSE2012S-CoreP2-Q45}
+\item \problemans{DSE2012P-CoreP2-Q44}
+\item \problemans{DSE2012P-CoreP2-Q45}
+\item \problemans{DSE2012-CoreP2-Q45}
+\item \problemans{DSE2013-CoreP2-Q45}
+\item \problemans{DSE2014-CoreP2-Q45}
+\item \problemans{DSE2015-CoreP2-Q45}
+\item \problemans{DSE2016-CoreP2-Q45}
+\item \problemans{DSE2017-CoreP2-Q45}
+\item \problemans{DSE2019-CoreP2-Q45}
+\item \problemans{DSE2020-CoreP2-Q45}
+\item \problemans{DSE2022-CoreP2-Q45}
+\item \problemans{DSE2023-CoreP2-Q45}
+\item \problemans{DSE2024-CoreP2-Q45}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Permutation and Combination \NF}
+\lfoot{S5-Ch10}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch10}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Permutation and Combination \NF}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-10}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 10.\arabic*\ ]
+\item \hyperref[section:5-10-1]{Basic Principles of Counting \NF}
+\item \hyperref[section:5-10-2]{Permutation \NF}
+\item \hyperref[section:5-10-3]{Combination \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 10.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 10.2 &  &  &  &  &  &  &  &  &  $3$ &  &  &  &  &  &  &  \\\hline
+Sec 10.3 &  &  &  &  &  &  &  &  &  &  $3$ &  &  &  &  $4$ &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 10.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 10.2 &  &  &  &  $1$ &  &  $1$ &  &  &  &  &  $1$ &  &  $1$ &  &  $1$ &  \\\hline
+Sec 10.3 &  &  &  $1$ &  &  $1$ &  &  $1$ &  $1$ &  $1$ &  &  &  $1$ &  &  $1$ &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+        & 10.1 & 10.2 & 10.3 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  \\
+\hline
+Paper 1 - B&  & \hyperref[DSE2018-CoreP1-Q15]{2018-P1-Q15} & \hyperref[DSE2019-CoreP1-Q15]{2019-P1-Q15} \\
+&  &  & \hyperref[DSE2023-CoreP1-Q15]{2023-P1-Q15} \\
+\hline
+\hline
+Paper 2 - A&  &  &  \\
+\hline
+Paper 2 - B&  & \hyperref[DSE2013-CoreP2-Q44]{2013-P2-Q44} & \hyperref[DSE2012-CoreP2-Q43]{2012-P2-Q43} \\
+&  & \hyperref[DSE2015-CoreP2-Q43]{2015-P2-Q43} & \hyperref[DSE2014-CoreP2-Q43]{2014-P2-Q43} \\
+&  & \hyperref[DSE2020-CoreP2-Q42]{2020-P2-Q42} & \hyperref[DSE2016-CoreP2-Q43]{2016-P2-Q43} \\
+&  & \hyperref[DSE2022-CoreP2-Q42]{2022-P2-Q42} & \hyperref[DSE2017-CoreP2-Q42]{2017-P2-Q42} \\
+&  & \hyperref[DSE2024-CoreP2-Q42]{2024-P2-Q42} & \hyperref[DSE2018-CoreP2-Q42]{2018-P2-Q42} \\
+&  &  & \hyperref[DSE2021-CoreP2-Q42]{2021-P2-Q42} \\
+&  &  & \hyperref[DSE2023-CoreP2-Q42]{2023-P2-Q42} \\
+\hline
+\hline
+Cross Topic&  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch10 - 10.1 Basic Principles of Counting \NF
+\section*{Section 10.1 - Basic Principles of Counting \NF}\phantomsection\label{section:5-10-1}
+
+
+
+
+
+% S5 Ch10 - 10.2 Permutation \NF
+\section*{Section 10.2 - Permutation \NF}\phantomsection\label{section:5-10-2}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q15} \problem[2018-P1-Q15]{DSE2018-CoreP1-Q15}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=2]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q44} \problem[2013-P2-Q44]{DSE2013-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q43} \problem[2015-P2-Q43]{DSE2015-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q42} \problem[2020-P2-Q42]{DSE2020-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q42} \problem[2022-P2-Q42]{DSE2022-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q42} \problem[2024-P2-Q42]{DSE2024-CoreP2-Q42}
+\end{enumx}
+
+
+
+
+% S5 Ch10 - 10.3 Combination \NF
+\section*{Section 10.3 - Combination \NF}\phantomsection\label{section:5-10-3}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=7]
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q15} \problem[2019-P1-Q15]{DSE2019-CoreP1-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP1-Q15} \problem[2023-P1-Q15]{DSE2023-CoreP1-Q15}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=9]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q43} \problem[2012-P2-Q43]{DSE2012-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q43} \problem[2014-P2-Q43]{DSE2014-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q43} \problem[2016-P2-Q43]{DSE2016-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q42} \problem[2017-P2-Q42]{DSE2017-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q42} \problem[2018-P2-Q42]{DSE2018-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q42} \problem[2021-P2-Q42]{DSE2021-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q42} \problem[2023-P2-Q42]{DSE2023-CoreP2-Q42}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2018-CoreP1-Q15}
+\item \problemans{DSE2013-CoreP2-Q44}
+\item \problemans{DSE2015-CoreP2-Q43}
+\item \problemans{DSE2020-CoreP2-Q42}
+\item \problemans{DSE2022-CoreP2-Q42}
+\item \problemans{DSE2024-CoreP2-Q42}
+\item \problemans{DSE2019-CoreP1-Q15}
+\item \problemans{DSE2023-CoreP1-Q15}
+\item \problemans{DSE2012-CoreP2-Q43}
+\item \problemans{DSE2014-CoreP2-Q43}
+\item \problemans{DSE2016-CoreP2-Q43}
+\item \problemans{DSE2017-CoreP2-Q42}
+\item \problemans{DSE2018-CoreP2-Q42}
+\item \problemans{DSE2021-CoreP2-Q42}
+\item \problemans{DSE2023-CoreP2-Q42}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{More about Probability \NF}
+\lfoot{S5-Ch11}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S5-Ch11}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {More about Probability \NF}} \\\vspace{1cm}
+\phantomsection\label{chapter:S5-11}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 11.\arabic*\ ]
+\item \hyperref[section:5-11-1]{Set Language \NF}
+\item \hyperref[section:5-11-2]{Using Set Language in Probability \NF}
+\item \hyperref[section:5-11-3]{Addition Law of Probability \NF}
+\item \hyperref[section:5-11-4]{Multiplication Law of Probability for Independent Events \NF}
+\item \hyperref[section:5-11-5]{Conditional Probability and Multiplication Law of Probability for Dependent Events \NF}
+\item \hyperref[section:5-11-6]{Using Permutation and Combination to Solve Probability Problems \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 11.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.4 &  &  &  &  $4$ &  &  $4$ &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.5 &  &  &  &  &  $13$ &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.6 &  $5$ &  $4$ &  $4$ &  &  &  &  $3$ &  $6$ &  &  &  $5$ &  $4$ &  $4$ &  &  $4$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 11.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.4 &  $1$ &  &  &  &  &  $1$ &  &  $1$ &  &  $1$ &  &  $1$ &  &  &  &  \\\hline
+Sec 11.5 &  &  &  $1$ &  &  &  &  &  &  &  $1$ &  &  &  $1$ &  $1$ &  $1$ &  \\\hline
+Sec 11.6 &  $1$ &  $1$ &  &  &  &  &  $1$ &  &  &  &  $1$ &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+        & 11.1 & 11.2 & 11.3 & 11.4 & 11.5 & 11.6 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  &  &  &  \\
+\hline
+Paper 1 - B&  &  &  & \hyperref[DSE2013-CoreP1-Q16]{2013-P1-Q16} & \hyperref[DSE2014-CoreP1-Q19]{2014-P1-Q19} & \hyperref[DSE2012S-CoreP1-Q16]{Samp-P1-Q16} \\
+&  &  &  & \hyperref[DSE2015-CoreP1-Q16]{2015-P1-Q16} &  & \hyperref[DSE2012P-CoreP1-Q16]{Prac-P1-Q16} \\
+&  &  &  &  &  & \hyperref[DSE2012-CoreP1-Q16]{2012-P1-Q16} \\
+&  &  &  &  &  & \hyperref[DSE2016-CoreP1-Q15]{2016-P1-Q15} \\
+&  &  &  &  &  & \hyperref[DSE2017-CoreP1-Q17]{2017-P1-Q17} \\
+&  &  &  &  &  & \hyperref[DSE2020-CoreP1-Q15]{2020-P1-Q15} \\
+&  &  &  &  &  & \hyperref[DSE2021-CoreP1-Q15]{2021-P1-Q15} \\
+&  &  &  &  &  & \hyperref[DSE2022-CoreP1-Q15]{2022-P1-Q15} \\
+&  &  &  &  &  & \hyperref[DSE2024-CoreP1-Q16]{2024-P1-Q16} \\
+\hline
+\hline
+Paper 2 - A&  &  &  &  &  &  \\
+\hline
+Paper 2 - B&  &  &  & \hyperref[DSE2012S-CoreP2-Q43]{Samp-P2-Q43} & \hyperref[DSE2012-CoreP2-Q44]{2012-P2-Q44} & \hyperref[DSE2012S-CoreP2-Q44]{Samp-P2-Q44} \\
+&  &  &  & \hyperref[DSE2015-CoreP2-Q44]{2015-P2-Q44} & \hyperref[DSE2019-CoreP2-Q43]{2019-P2-Q43} & \hyperref[DSE2012P-CoreP2-Q43]{Prac-P2-Q43} \\
+&  &  &  & \hyperref[DSE2017-CoreP2-Q43]{2017-P2-Q43} & \hyperref[DSE2022-CoreP2-Q43]{2022-P2-Q43} & \hyperref[DSE2016-CoreP2-Q42]{2016-P2-Q42} \\
+&  &  &  & \hyperref[DSE2019-CoreP2-Q42]{2019-P2-Q42} & \hyperref[DSE2023-CoreP2-Q43]{2023-P2-Q43} & \hyperref[DSE2020-CoreP2-Q43]{2020-P2-Q43} \\
+&  &  &  & \hyperref[DSE2021-CoreP2-Q43]{2021-P2-Q43} & \hyperref[DSE2024-CoreP2-Q43]{2024-P2-Q43} &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S5 Ch11 - 11.1 Set Language \NF
+\section*{Section 11.1 - Set Language \NF}\phantomsection\label{section:5-11-1}
+
+
+
+
+
+% S5 Ch11 - 11.2 Using Set Language in Probability \NF
+\section*{Section 11.2 - Using Set Language in Probability \NF}\phantomsection\label{section:5-11-2}
+
+
+
+
+
+% S5 Ch11 - 11.3 Addition Law of Probability \NF
+\section*{Section 11.3 - Addition Law of Probability \NF}\phantomsection\label{section:5-11-3}
+
+
+
+
+
+% S5 Ch11 - 11.4 Multiplication Law of Probability for Independent Events \NF
+\section*{Section 11.4 - Multiplication Law of Probability for Independent Events \NF}\phantomsection\label{section:5-11-4}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP1-Q16} \problem[2013-P1-Q16]{DSE2013-CoreP1-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q16} \problem[2015-P1-Q16]{DSE2015-CoreP1-Q16}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=3]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q43} \problem[Samp-P2-Q43]{DSE2012S-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q44} \problem[2015-P2-Q44]{DSE2015-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q43} \problem[2017-P2-Q43]{DSE2017-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q42} \problem[2019-P2-Q42]{DSE2019-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q43} \problem[2021-P2-Q43]{DSE2021-CoreP2-Q43}
+\end{enumx}
+
+
+
+
+% S5 Ch11 - 11.5 Conditional Probability and Multiplication Law of Probability for Dependent Events \NF
+\section*{Section 11.5 - Conditional Probability and Multiplication Law of Probability for Dependent Events \NF}\phantomsection\label{section:5-11-5}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=8]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q19} \problem[2014-P1-Q19]{DSE2014-CoreP1-Q19}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=9]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q44} \problem[2012-P2-Q44]{DSE2012-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q43} \problem[2019-P2-Q43]{DSE2019-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q43} \problem[2022-P2-Q43]{DSE2022-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q43} \problem[2023-P2-Q43]{DSE2023-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q43} \problem[2024-P2-Q43]{DSE2024-CoreP2-Q43}
+\end{enumx}
+
+
+
+
+% S5 Ch11 - 11.6 Using Permutation and Combination to Solve Probability Problems \NF
+\section*{Section 11.6 - Using Permutation and Combination to Solve Probability Problems \NF}\phantomsection\label{section:5-11-6}
+
+\textbf{Paper 1 - B}
+\begin{enumx}[label=\arabic*.,start=14]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q16} \problem[Samp-P1-Q16]{DSE2012S-CoreP1-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q16} \problem[Prac-P1-Q16]{DSE2012P-CoreP1-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q16} \problem[2012-P1-Q16]{DSE2012-CoreP1-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q15} \problem[2016-P1-Q15]{DSE2016-CoreP1-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q17} \problem[2017-P1-Q17]{DSE2017-CoreP1-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q15} \problem[2020-P1-Q15]{DSE2020-CoreP1-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q15} \problem[2021-P1-Q15]{DSE2021-CoreP1-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q15} \problem[2022-P1-Q15]{DSE2022-CoreP1-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP1-Q16} \problem[2024-P1-Q16]{DSE2024-CoreP1-Q16}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=23]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q44} \problem[Samp-P2-Q44]{DSE2012S-CoreP2-Q44}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q43} \problem[Prac-P2-Q43]{DSE2012P-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q42} \problem[2016-P2-Q42]{DSE2016-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q43} \problem[2020-P2-Q43]{DSE2020-CoreP2-Q43}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2013-CoreP1-Q16}
+\item \problemans{DSE2015-CoreP1-Q16}
+\item \problemans{DSE2012S-CoreP2-Q43}
+\item \problemans{DSE2015-CoreP2-Q44}
+\item \problemans{DSE2017-CoreP2-Q43}
+\item \problemans{DSE2019-CoreP2-Q42}
+\item \problemans{DSE2021-CoreP2-Q43}
+\item \problemans{DSE2014-CoreP1-Q19}
+\item \problemans{DSE2012-CoreP2-Q44}
+\item \problemans{DSE2019-CoreP2-Q43}
+\item \problemans{DSE2022-CoreP2-Q43}
+\item \problemans{DSE2023-CoreP2-Q43}
+\item \problemans{DSE2024-CoreP2-Q43}
+\item \problemans{DSE2012S-CoreP1-Q16}
+\item \problemans{DSE2012P-CoreP1-Q16}
+\item \problemans{DSE2012-CoreP1-Q16}
+\item \problemans{DSE2016-CoreP1-Q15}
+\item \problemans{DSE2017-CoreP1-Q17}
+\item \problemans{DSE2020-CoreP1-Q15}
+\item \problemans{DSE2021-CoreP1-Q15}
+\item \problemans{DSE2022-CoreP1-Q15}
+\item \problemans{DSE2024-CoreP1-Q16}
+\item \problemans{DSE2012S-CoreP2-Q44}
+\item \problemans{DSE2012P-CoreP2-Q43}
+\item \problemans{DSE2016-CoreP2-Q42}
+\item \problemans{DSE2020-CoreP2-Q43}
+\end{enumx}
+\end{document}

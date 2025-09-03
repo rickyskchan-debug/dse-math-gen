@@ -1,0 +1,930 @@
+%%%%% Packages
+
+\usepackage{verbatim}
+\usepackage[width=18.8cm, left=1.1cm, height=25.9cm, top=1.7cm]{geometry}
+\usepackage{amsmath,graphicx}
+\usepackage{amssymb, amsthm}
+\usepackage{color, enumitem}
+\usepackage{arcs} %\overarc{...} arc of circle
+\usepackage{pifont}
+\usepackage{soul}
+\usepackage{wrapfig}
+\usepackage{fancybox}
+\usepackage{harpoon}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.multipart}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage{multicol}
+\setlength{\parindent}{0cm}
+\usepackage{fontspec} %加這個就可以設定字體
+\usepackage{fourier}
+\usepackage{cleveref}
+\usepackage[most]{tcolorbox}
+\usepackage{lipsum}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+\usepackage{xparse}
+\usepackage{titlesec}
+\usepackage{mathtools}
+
+
+%%%%% Header and Footer
+
+\renewcommand{\headrulewidth}{0pt}
+\rhead{}
+
+\cfoot{P. \thepage}
+
+%%%%% Sbullet
+
+\newcommand\sbullet[1][1]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+%%%%% Section Style
+
+\titleformat{\section}
+{\bf\LARGE}{\thesection.}{0.3em}{}
+
+
+%%%%% MathsChris
+
+\renewcommand{\MathsChris}{MathsChris\null}
+
+
+%%%%% Recurring Decimals
+
+
+\ExplSyntaxOn
+
+%% Dots on the first and last digit
+\NewDocumentCommand{\periodfl}{m}
+{
+  \repdec_initial_final_dots:n { #1 }
+}
+
+\seq_new:N \l__repdec_digits_seq
+\tl_new:N \l__repdec_first_tl
+\tl_new:N \l__repdec_last_tl
+
+\cs_new_protected:Npn \repdec_initial_final_dots:n #1
+{
+  \seq_set_split:Nnn \l__repdec_digits_seq {} { #1 }
+  \seq_pop_left:NN \l__repdec_digits_seq \l__repdec_first_tl
+  \seq_pop_right:NN \l__repdec_digits_seq \l__repdec_last_tl
+  \quark_if_no_value:VF \l__repdec_first_tl { \dot{\l__repdec_first_tl} }
+  \seq_use:Nnnn \l__repdec_digits_seq {}{}{}
+  \quark_if_no_value:VF \l__repdec_last_tl { \dot{\l__repdec_last_tl} }
+}
+\cs_generate_variant:Nn \quark_if_no_value:nF { V }
+
+%% Dots on all digits
+\NewDocumentCommand{\periodalldots}{m}
+{
+  \repdec_initial_all_dots:n { #1 }
+}
+
+\cs_new_protected:Npn \repdec_initial_all_dots:n #1
+{
+  \tl_map_inline:nn { #1 } { \dot{##1} }
+}
+
+%% Bar over period
+\NewDocumentCommand{\periodbar}{m}
+{
+  \overline{ #1 }
+}
+
+%% Parentheses around period
+\NewDocumentCommand{\periodparens}{m}
+{
+  (#1)
+}
+
+%% Dot on unique digit, bar on several digits
+\NewDocumentCommand{\periodmixed}{m}
+{
+  \repdec_mixed:n { #1 }
+}
+\cs_new_protected:Npn \repdec_mixed:n #1
+{
+  \int_case:nnn { \tl_count:n { #1 } }
+  {
+    { 0 } { }
+      { 1 } { \dot{#1} }
+  }
+  {
+    \overline{#1}
+  }
+}
+
+\ExplSyntaxOff
+
+%%%%%
+
+
+
+
+
+
+%%%%% enumitem setting
+\setlistdepth{9}
+\newlist{enumprob}{enumerate}{9}
+\setenumerate[enumprob]{leftmargin=8mm,rightmargin=0pt,label=\arabic*.,labelwidth=8mm, itemsep=6mm, topsep=0mm, labelsep=2mm, labelindent=0pt, align=left, partopsep=5mm}
+\setlist[enumprob,1]{label=\arabic*.,widest=999,itemindent=0pt,labelsep=2mm,labelwidth=6mm}
+\setlist[enumprob,2]{label=(\alph*)}
+\setlist[enumprob,3]{label=(\roman*)}
+\setlist[enumprob,4]{label=(\arabic*)}
+\setlist[enumprob,5]{label=(\arabic*)}
+\setlist[enumprob,6]{label=(\arabic*)}
+\setlist[enumprob,7]{label=(\arabic*)}
+\setlist[enumprob,8]{label=(\arabic*)}
+\setlist[enumprob,9]{label=(\arabic*)}
+
+
+
+\setlistdepth{9}
+\newlist{enumx}{enumerate}{9}
+\setenumerate[enumx]{leftmargin=0.8cm,rightmargin=0pt,label=\arabic*.,labelwidth=6mm, itemsep=3pt, topsep=3mm, labelsep=2mm, labelindent=0pt, align=left, partopsep=0mm}
+\setlist[enumx,1]{label=\arabic*.}
+\setlist[enumx,2]{label=(\alph*),itemsep=0pt,topsep=0pt}
+\setlist[enumx,3]{label=(\roman*)}
+\setlist[enumx,4]{label=(\arabic*)}
+\setlist[enumx,5]{label=(\arabic*)}
+\setlist[enumx,6]{label=(\arabic*)}
+\setlist[enumx,7]{label=(\arabic*)}
+\setlist[enumx,8]{label=(\arabic*)}
+\setlist[enumx,9]{label=(\arabic*)}
+
+
+\setlistdepth{9}
+\newlist{thinkitem}{enumerate}{9}
+\setenumerate[thinkitem]{leftmargin=1.2em,rightmargin=0pt,label=\textcolor{green!80!black}{\sbullet[1.5]},itemsep=0pt,topsep=3pt}
+
+\newlist{itemlist}{enumerate}{9}
+\setenumerate[itemlist]{leftmargin=1.2em,rightmargin=0pt,label={\sbullet[1.5]},itemsep=0pt,topsep=3pt}
+
+\setlistdepth{9}
+\newlist{planitem}{enumerate}{9}
+\setenumerate[planitem]{leftmargin=*,rightmargin=0pt,label=\arabic*.,itemsep=0pt,topsep=3pt,widest=99}
+\setlist[planitem,1]{label=\arabic*.}
+\setlist[planitem,2]{label=(\alph*)}
+\setlist[planitem,3]{label=(\roman*)}
+\setlist[planitem,4]{label=(\arabic*)}
+\setlist[planitem,5]{label=(\arabic*)}
+\setlist[planitem,6]{label=(\arabic*)}
+\setlist[planitem,7]{label=(\arabic*)}
+\setlist[planitem,8]{label=(\arabic*)}
+\setlist[planitem,9]{label=(\arabic*)}
+
+\newlist{steps}{enumerate}{9}
+\setenumerate[steps]{leftmargin=*,rightmargin=0pt,label=Step~\arabic*.,itemsep=0pt,topsep=3pt,widest=99}
+\setlist[steps,1]{label=Step \arabic*.}
+\setlist[steps,2]{label=(\alph*)}
+\setlist[steps,3]{label=(\roman*)}
+\setlist[steps,4]{label=(\arabic*)}
+\setlist[steps,5]{label=(\arabic*)}
+\setlist[steps,6]{label=(\arabic*)}
+\setlist[steps,7]{label=(\arabic*)}
+\setlist[steps,8]{label=(\arabic*)}
+\setlist[steps,9]{label=(\arabic*)}
+
+\newlist{writesteps}{enumerate}{9}
+\setenumerate[writesteps]{leftmargin=*,rightmargin=0pt,label={\small \tt \textcolor{blue}{\arabic*.}},itemsep=0pt,topsep=3pt,widest=99}
+\setlist[writesteps,1]{label={\small \tt \textcolor{blue}{\arabic*.}}}
+\setlist[writesteps,2]{label={\small \tt \textcolor{blue}{(\alph*)}}}
+\setlist[writesteps,3]{label=(\roman*)}
+\setlist[writesteps,4]{label=(\arabic*)}
+\setlist[writesteps,5]{label=(\arabic*)}
+\setlist[writesteps,6]{label=(\arabic*)}
+\setlist[writesteps,7]{label=(\arabic*)}
+\setlist[writesteps,8]{label=(\arabic*)}
+\setlist[writesteps,9]{label=(\arabic*)}
+
+\newcommand{\planstep}[1]{\ensuremath{\text{\small \tt \textcolor{blue}{[#1]}}}}
+
+
+
+
+%%%%% Fonts Setting
+\setmainfont{Times New Roman}
+\usepackage{xeCJK}  %讓中英文字體分開設置
+\setCJKmainfont{新細明體} %設定中文為系統上的字型，而英文不去更動，使用原TeX字%型
+\XeTeXlinebreaklocale "zh"   %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus 1pt %這兩行一定要加，中文才能自動換行
+
+%%%%% User Defined Functions
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\dps}{\displaystyle}
+\newcommand{\parallelsum}{\mathbin{\!/\mkern-5mu/\!}}
+\renewcommand{\overarc}[1]{\widearc{#1}}
+\newcommand{\any}{\forall\, }
+\newcommand{\degree}{\ensuremath{^{\circ}}}
+\renewcommand{\d}{\mbox{d}}
+
+\newcommand{\NF}{
+  \begin{tikzpicture}
+    \node[inner sep=0.1cm, preaction={fill=black,fill opacity=0.15},rounded corners=0.1ex,font=\fontsize{7pt}{17pt}\selectfont] (c) {\textbf{NF}}
+  \end{tikzpicture}
+}
+
+%%% Vectors
+\renewcommand{\i}{\mathbf{i}}
+\renewcommand{\j}{\mathbf{j}}
+\renewcommand{\k}{\mathbf{k}}
+\renewcommand{\vec}[1]{\overrightharp{#1}}
+
+%%%%% Marking Style
+\renewcommand{\marks}[1]{\hfill\null\hfill (#1~marks)}
+\newcommand{\onemark}{\hfill\null\hfill (1~mark)}
+
+%%%%% Graphics
+
+\newcommand{\graphics}[1]{\par
+  \begin{center}
+    \includegraphics{#1}
+  \end{center}
+}
+
+\graphicspath{{D:/DSEbyTopic/Graphics/}}
+
+\newcommand{\mcgraphics}[2]{
+  \null\par
+  \vspace{-3mm}
+  \begin{minipage}[t]{0.45\textwidth}
+
+    #2
+
+  \end{minipage}
+  \begin{minipage}[t]{0.5\textwidth}
+    \null\par
+    \vspace{-0.02\textwidth}
+
+    \begin{flushright}
+      \includegraphics{#1}
+    \end{flushright}
+  \end{minipage}
+  \vspace{0.01\textwidth}
+}
+
+
+%%%%% Environments
+
+\newenvironment{absolutelynopagebreak}
+{\nobreak\vfil\penalty0\vfilneg
+  \vtop\bgroup}
+{\par\xdef\tpd{\the\prevdepth}\egroup
+  \prevdepth=\tpd}
+
+\newcommand{\greybox}[1]{
+  \begin{tikzpicture}
+    \node[inner sep=0.3cm, preaction={fill=black,fill opacity=0.15},rounded corners=1ex,font=\fontsize{24pt}{24pt}\selectfont] (c) {#1}
+  \end{tikzpicture}
+}
+
+\SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft‌​#1}}
+
+
+%%%%% get and put
+
+\newcommand{\sectiontitle}[3]{\input{"D:/DSEbyTopic/SectionTitle/Title_#1_#2_#3.tex"}}
+
+
+\newcommand{\problem}[2][]{
+  \begin{minipage}[t]{(\textwidth-1cm)}
+    \input{"D:/DSEbyTopic/Problems/#2.tex"}%
+    \ifstrempty{#1}%
+    {
+    }%
+    {\linebreak\null\hfill[\includegraphics{uppointing}#2]
+    }%
+  \end{minipage}
+}
+
+
+
+\newcommand{\problemans}[1]{
+  \begin{minipage}[t]{(\textwidth-1cm)}
+    \input{"D:/DSEbyTopic/Problems/#1-ans.tex"}
+  \end{minipage}
+}
+
+
+%%%%% Graphics
+
+
+\newcommand{\starr}{\includegraphics{star}}
+
+\graphicspath{{D:/DSEbyTopic/Graphics/}}
+
+\newcommand{\mcgraphics}[2]{
+  \par
+  \vspace{0.0001\textwidth}
+  \begin{minipage}[t]{0.33\textwidth}
+
+    #2
+
+  \end{minipage}
+  \begin{minipage}[t]{0.65\textwidth}
+    \null\par
+    \vspace{-0.12\textwidth}
+
+    \begin{flushright}
+      \includegraphics{#1}
+    \end{flushright}
+  \end{minipage}
+  \vspace{0.01\textwidth}
+}
+
+
+
+%%%%% environment commands
+
+
+%%%%% TC environment
+
+\newcounter{tccounter}
+\setcounter{tccounter}{0}
+\renewcommand{\thetccount}{\arabic{tccounter}}
+\newenvironment{theorem}[2][]{%
+  \refstepcounter{tccounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=blue!20]
+          {\strut Theorem~\thetccount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=blue!20]
+          {\strut Theorem~\thetccount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=blue!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+\newenvironment{concept}[2][]{%
+  \refstepcounter{tccounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=blue!20]
+          {\strut Concept~\thetccount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=blue!20]
+          {\strut Concept~\thetccount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=blue!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+\newenvironment{formula}[2][]{%
+  \refstepcounter{tccounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=blue!20]
+          {\strut Formula~\thetccount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=blue!20]
+          {\strut Formula~\thetccount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=blue!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+\newenvironment{presentation}[2][]{%
+  \refstepcounter{tccounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=blue!20]
+          {\strut Presentation~\thetccount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=blue!20]
+          {\strut Presentation~\thetccount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=blue!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+%%%%% LP environment
+
+\newcounter{lpcounter}
+\setcounter{lpcounter}{0}
+\renewcommand{\thelpcount}{\arabic{lpcounter}}
+
+\newenvironment{skill}[2][]{%
+  \refstepcounter{lpcounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Skill~\thelpcount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Skill~\thelpcount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+\newenvironment{trick}[2][]{%
+  \refstepcounter{lpcounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Trick~\thelpcount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Trick~\thelpcount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+\newenvironment{fact}[2][]{%
+  \refstepcounter{lpcounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Fact~\thelpcount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Fact~\thelpcount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+\newenvironment{skillgroup}[2][]{%
+  \refstepcounter{lpcounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Skill Group~\thelpcount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Skill Group~\thelpcount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+\newenvironment{trickgroup}[2][]{%
+  \refstepcounter{lpcounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Trick Group~\thelpcount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Trick Group~\thelpcount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+\newenvironment{factgroup}[2][]{%
+  \refstepcounter{lpcounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Fact Group~\thelpcount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Fact Group~\thelpcount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+\newenvironment{pattern}[2][]{%
+  \refstepcounter{lpcounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Pattern~\thelpcount};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Pattern~\thelpcount~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+\newcounter{illucounter}[lpcounter]
+\setcounter{illucounter}{0}
+\renewcommand{\theillucounter}{\thelpcounter.\arabic{illucounter}}
+
+\newenvironment{illustration}[2][]{%
+  \refstepcounter{illucounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!10]
+          {\strut Illustration~\theillucounter};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!10]
+          {\strut Illustration~\theillucounter~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!10,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+\newenvironment{tiy}[2][]{%
+  \refstepcounter{illucounter}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Try it Yourself~\theillucounter};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+          \tikz[baseline=(current bounding box.east),outer sep=0pt]
+          \node[anchor=east,rectangle,fill=red!20]
+          {\strut Try it Yourself~\theillucounter~(#1)~};}}%
+  }%
+  \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=red!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+
+%%%%% Eg Environments
+
+\newcounter{egcounter}
+\setcounter{egcounter}{0}
+\renewcommand{\theegcount}{\arabic{egcounter}}
+\newenvironment{example}[2][]{%
+  \begin{absolutelynopagebreak}
+    \refstepcounter{egcounter}%
+    \ifstrempty{#1}%
+    {\mdfsetup{%
+        frametitle={%
+            \tikz[baseline=(current bounding box.east),outer sep=0pt]
+            \node[anchor=east,rectangle,fill=green!40]
+            {\strut Example~\theegcount};}}
+    }%
+    {\mdfsetup{%
+        frametitle={%
+            \tikz[baseline=(current bounding box.east),outer sep=0pt]
+            \node[anchor=east,rectangle,fill=green!40]
+            {\strut Example~\theegcount~(#1)~};}}%
+    }%
+    \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=green!40,%
+      linewidth=2pt,topline=true,%
+      frametitleaboveskip=\dimexpr-\ht\strutbox\relax,
+      skipabove=0pt,skipbelow=25pt,
+    }
+    \begin{mdframed}[]\relax%
+      \label{#2}}{\end{mdframed}\end{absolutelynopagebreak}}
+
+
+\newenvironment{Question}[2][]{%
+  \begin{absolutelynopagebreak}
+    \refstepcounter{egcounter}%
+    \ifstrempty{#1}%
+    {\mdfsetup{%
+        frametitle={%
+            \tikz[baseline=(current bounding box.east),outer sep=0pt]
+            \node[anchor=east,rectangle,fill=green!40]
+            {\strut Example~\ref{#2}};}}
+    }%
+    {\mdfsetup{%
+        frametitle={%
+            \tikz[baseline=(current bounding box.east),outer sep=0pt]
+            \node[anchor=east,rectangle,fill=green!40]
+            {\strut Example~\ref{#2}~(#1)~};}}%
+    }%
+    \mdfsetup{innertopmargin=4pt,innerbottommargin=10pt,linecolor=green!40,%
+      linewidth=2pt,topline=true,%
+      frametitleaboveskip=\dimexpr-\ht\strutbox\relax,
+      skipabove=0pt,skipbelow=25pt,
+    }
+    \begin{mdframed}[]\relax%
+      }{\end{mdframed}\end{absolutelynopagebreak}}
+
+
+
+
+
+
+\newenvironment{Read}{%
+  \begin{mdframed}[%
+      frametitle={\includegraphics{Read}~Read the Question},
+      apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+              shade,left color=green!20!white, right color=white}}},
+      %frametitlerule=true,
+      %frametitlerulewidth=1pt,
+      %frametitlerulecolor=black,
+      innertopmargin=0.7em,%
+      innerleftmargin=0.7em,%,
+      innerrightmargin=0.7em,
+      hidealllines=true,leftline=true,
+      frametitlebackgroundcolor=green!20,
+      linewidth=3pt,
+      linecolor=green!20,
+      skipabove=0pt,skipbelow=0pt,
+      %fontcolor=white,%
+      %backgroundcolor=green!10
+    ]%
+    }{%
+  \end{mdframed}
+}
+
+\newcommand{\readrule}{\textcolor{green!80!black}{\hrulefill}}
+\newcommand{\illustrationrule}{\textcolor{red!10}{\hrulefill}}
+
+
+
+\newenvironment{Think}{%
+  \begin{mdframed}[%
+      frametitle={\includegraphics{Think}~Thinking Process},
+      apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+              shade,left color=green!20!white, right color=white}}},
+      %frametitlerule=true,
+      %frametitlerulewidth=1pt,
+      %frametitlerulecolor=black,
+      innertopmargin=0.7em,%
+      innerleftmargin=0.7em,%,
+      innerrightmargin=0.7em,
+      hidealllines=true,leftline=true,
+      frametitlebackgroundcolor=green!20,
+      linewidth=3pt,
+      linecolor=green!20,
+      skipabove=0pt,skipbelow=0pt,
+      %fontcolor=white,%
+      %backgroundcolor=green!10
+    ]%
+    }{%
+  \end{mdframed}
+}
+
+\newenvironment{Plan}{%
+  \begin{mdframed}[%
+      frametitle={\includegraphics{Plan}~Plan of Attack},
+      apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+              shade,left color=green!20!white, right color=white}}},
+      %frametitlerule=true,
+      %frametitlerulewidth=1pt,
+      %frametitlerulecolor=black,
+      innertopmargin=0.7em,%
+      innerleftmargin=0.7em,%,
+      innerrightmargin=0.7em,
+      hidealllines=true,leftline=true,
+      frametitlebackgroundcolor=green!20,
+      linewidth=3pt,
+      linecolor=green!20,
+      skipabove=0pt,skipbelow=0pt,
+      %fontcolor=white,%
+      %backgroundcolor=green!10
+    ]%
+    }{%
+  \end{mdframed}
+}
+
+\newenvironment{Remark}{%
+  \begin{mdframed}[%
+      frametitle={Remarks and Comments},
+      apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+              shade,left color=green!20!white, right color=white}}},
+      %frametitlerule=true,
+      %frametitlerulewidth=1pt,
+      %frametitlerulecolor=black,
+      innertopmargin=0.7em,%
+      innerleftmargin=0.7em,%,
+      innerrightmargin=0.7em,
+      hidealllines=true,leftline=true,
+      frametitlebackgroundcolor=green!20,
+      linewidth=3pt,
+      linecolor=green!20,
+      skipabove=0pt,skipbelow=0pt,
+      %fontcolor=white,%
+      %backgroundcolor=green!10
+    ]%
+    }{%
+  \end{mdframed}
+}
+
+\newenvironment{Write}{%
+  \begin{mdframed}[%
+      frametitle={\includegraphics{Write}~What to Write},
+      apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+              shade,left color=green!30!white, right color=white}}},
+      %frametitlerule=true,
+      %frametitlerulewidth=1pt,
+      %frametitlerulecolor=black,
+      innertopmargin=0.7em,%
+      innerleftmargin=0.7em,%,
+      innerrightmargin=0.7em,
+      hidealllines=true,leftline=true, bottomline=true,
+      frametitlebackgroundcolor=green!30,
+      linewidth=3pt,
+      linecolor=green!30,
+      %fontcolor=white,%
+      %backgroundcolor=green!10
+    ]%
+    \large
+    }{%
+  \end{mdframed}
+}
+
+
+
+
+
+
+%%%%% highlight box
+
+
+\newtcbox{\lbox}{enhanced,nobeforeafter,tcbox raise base,boxrule=1.3pt,top=0mm,bottom=0mm,right=0.05mm,left=0.05mm,arc=0pt,boxsep=2pt,before upper={\vphantom{dlg}},
+  colframe=green!80!black, colback=white
+}
+
+
+\newtcbox{\dbox}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.7pt,top=0.2mm,bottom=0.1mm,right=0.7mm,left=0.7mm,arc=0pt,boxsep=3pt,before upper={\vphantom{\textrm{dlg}}\tt\small},
+  colframe=green!80!black, colback=green!80!black, coltext=white
+}
+
+
+\newcommand{\ldbox}[2]{ \lbox{#1}\nolinebreak\dbox{#2} }
+
+
+
+
+\newtcbox{\wbox}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.7pt,top=0.2mm,bottom=0.1mm,right=1.1mm,left=0.7mm,arc=3pt,boxsep=3pt,before upper={\vphantom{dlg}},
+  colframe=black,colback=white
+}
+
+
+
+
+%%%%% For Reference
+
+\newcommand{\myref}[2]{ \wbox{\hyperref[#2]{#1~\ref{#2}}} }
+
+
+%%%%% CW MathsNotes
+
+\newcommand{\CWMathsNotes}{\includegraphics[scale=0.6]{CW_MathsNotes}}
+
+
+
+
+%%%%% 
+
+\newcommand{\DSEsectionAone}{\textbf{Paper 1 - A(1)}
+
+}
+\newcommand{\DSEsectionAtwo}{\textbf{Paper 1 - A(2)}
+
+}
+\newcommand{\DSEsectionB}{\textbf{Paper 1 - B}
+
+}
+\newcommand{\DSEMCsectionA}{\textbf{Paper 2 - A}
+
+}
+\newcommand{\DSEMCsectionB}{\textbf{Paper 2 - B}
+
+}
+
+\newcommand{\showstat}[1]{#1}
+
+
+\newcommand{\DSESyl}[1]{
+
+}
+
+\newcommand{\DSETopicName}[1]{
+
+}
+\SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft‌​#1}}
+
+
+
+
+\usetikzlibrary{shapes,shadows}
+\tikzstyle{abstractbox} = [draw=black, fill=white, rectangle,
+inner sep=10pt, style=rounded corners, drop shadow={fill=black,
+    opacity=0.5}]
+\tikzstyle{abstracttitle} =[fill=white]
+
+\newcommand{\sectionsummary}[2][fill=white]{
+  \begin{center}
+    \begin{tikzpicture}
+      \node [abstractbox, #1] (box)
+      {\begin{minipage}{0.80\linewidth}
+          %            \setlength{\parindent}{2mm}
+          \footnotesize #2
+        \end{minipage}};
+      \node[abstracttitle, right=10pt] at (box.north west) {Section Summary};
+    \end{tikzpicture}
+  \end{center}
+}
+

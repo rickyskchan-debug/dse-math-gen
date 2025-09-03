@@ -1,0 +1,2071 @@
+\documentclass[12pt, a4paper]{article}
+
+\input{style.tex}
+
+
+
+\begin{document}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Overview of S3 Chapters}
+\lfoot{S3 Chapters}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{\fontsize{24pt}{24pt}\selectfont {S3 Chapters}} \\\vspace{1cm}
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Chapter List}
+\begin{enumx}[label=Ch \arabic*. , leftmargin=2cm,rightmargin=0pt,labelwidth=17mm, itemsep=3pt, topsep=3mm, labelsep=2mm, labelindent=0pt, align=left, partopsep=0mm ]
+\item \hyperref[chapter:S3-1]{More about Factorization of Polynomials} \hfill P.\pageref{chapter:S3-1}
+\item \hyperref[chapter:S3-2]{Linear Inequalities in One Unknown} \hfill P.\pageref{chapter:S3-2}
+\item \hyperref[chapter:S3-3]{Percentages (II)} \hfill P.\pageref{chapter:S3-3}
+\item \hyperref[chapter:S3-4]{Special Lines and Centres in a Triangle} \hfill P.\pageref{chapter:S3-4}
+\item \hyperref[chapter:S3-5]{Quadrilaterals} \hfill P.\pageref{chapter:S3-5}
+\item \hyperref[chapter:S3-6]{More about 3-D Figures} \hfill P.\pageref{chapter:S3-6}
+\item \hyperref[chapter:S3-7]{Areas and Volumes (III)} \hfill P.\pageref{chapter:S3-7}
+\item \hyperref[chapter:S3-8]{Coordinate Geometry of Straight Lines} \hfill P.\pageref{chapter:S3-8}
+\item \hyperref[chapter:S3-9]{Trigonometric Relations} \hfill P.\pageref{chapter:S3-9}
+\item \hyperref[chapter:S3-10]{Applications of Trigonometry} \hfill P.\pageref{chapter:S3-10}
+\item \hyperref[chapter:S3-11]{Measures of Central Tendency} \hfill P.\pageref{chapter:S3-11}
+\item \hyperref[chapter:S3-12]{Introduction to Probability} \hfill P.\pageref{chapter:S3-12}
+\end{enumx}
+\section*{Mark Distribution from Chapter 1 to Chapter 12}
+%Graph
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+width=18cm,
+height=7cm,
+bar width=0.6cm,
+ybar,
+ylabel={Weight},
+xticklabels={
+Ch 1,Ch 2,Ch 3,Ch 4,Ch 5,Ch 6,Ch 7,Ch 8,Ch 9,Ch 10,Ch 11,Ch 12},
+xtick=data,
+ymin=0,
+nodes near coords,
+nodes near coords align={vertical},
+x tick label style={rotate=45,anchor=east},
+]
+\addplot coordinates {(1,36)(2,2)(3,12)(4,15)(5,40)(6,0)(7,102)(8,15)(9,2)(10,5)(11,33)(12,65)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+
+%Graph
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+width=18cm,
+height=7cm,
+bar width=0.6cm,
+ybar,
+ylabel={P1 Marks},
+xticklabels={
+Ch 1,Ch 2,Ch 3,Ch 4,Ch 5,Ch 6,Ch 7,Ch 8,Ch 9,Ch 10,Ch 11,Ch 12},
+xtick=data,
+ymin=0,
+nodes near coords,
+nodes near coords align={vertical},
+x tick label style={rotate=45,anchor=east},
+]
+\addplot coordinates {(1,33)(2,1)(3,0)(4,8)(5,15)(6,0)(7,89)(8,12)(9,0)(10,0)(11,22)(12,48)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+
+%Graph
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+width=18cm,
+height=7cm,
+bar width=0.6cm,
+ybar,
+ylabel={P2 Marks},
+xticklabels={
+Ch 1,Ch 2,Ch 3,Ch 4,Ch 5,Ch 6,Ch 7,Ch 8,Ch 9,Ch 10,Ch 11,Ch 12},
+xtick=data,
+ymin=0,
+nodes near coords,
+nodes near coords align={vertical},
+x tick label style={rotate=45,anchor=east},
+]
+\addplot coordinates {(1,3)(2,1)(3,12)(4,7)(5,25)(6,0)(7,13)(8,3)(9,2)(10,5)(11,11)(12,17)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{More about Factorization of Polynomials}
+\lfoot{S3-Ch1}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch1}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {More about Factorization of Polynomials}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-1}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 1.\arabic*\ ]
+\item \hyperref[section:3-1-1]{Factorization by Cross-method}
+\item \hyperref[section:3-1-2]{Sum and Difference of Two  Cubes \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 1.1 &  $3$ &  $3$ &  &  &  $3$ &  &  $4$ &  $3$ &  &  $4$ &  $3$ &  $3$ &  $4$ &  &  $3$ &  \\\hline
+Sec 1.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 1.1 &  &  &  &  &  &  &  &  $1$ &  $1$ &  &  &  &  &  $1$ &  &  \\\hline
+Sec 1.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+        & 1.1 & 1.2 \\\hline
+\hline
+Paper 1 - A(1)& \hyperref[DSE2012S-CoreP1-Q03]{Samp-P1-Q3} &  \\
+& \hyperref[DSE2012P-CoreP1-Q03]{Prac-P1-Q3} &  \\
+& \hyperref[DSE2014-CoreP1-Q02]{2014-P1-Q2} &  \\
+& \hyperref[DSE2016-CoreP1-Q04]{2016-P1-Q4} &  \\
+& \hyperref[DSE2017-CoreP1-Q03]{2017-P1-Q3} &  \\
+& \hyperref[DSE2019-CoreP1-Q04]{2019-P1-Q4} &  \\
+& \hyperref[DSE2020-CoreP1-Q02]{2020-P1-Q2} &  \\
+& \hyperref[DSE2021-CoreP1-Q03]{2021-P1-Q3} &  \\
+& \hyperref[DSE2022-CoreP1-Q04]{2022-P1-Q4} &  \\
+& \hyperref[DSE2024-CoreP1-Q03]{2024-P1-Q3} &  \\
+\hline
+Paper 1 - A(2)&  &  \\
+\hline
+Paper 1 - B&  &  \\
+\hline
+\hline
+Paper 2 - A& \hyperref[DSE2017-CoreP2-Q01]{2017-P2-Q1} &  \\
+& \hyperref[DSE2018-CoreP2-Q03]{2018-P2-Q3} &  \\
+& \hyperref[DSE2023-CoreP2-Q04]{2023-P2-Q4} &  \\
+\hline
+Paper 2 - B&  &  \\
+\hline
+\hline
+Cross Topic&  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch1 - 1.1 Factorization by Cross-method
+\section*{Section 1.1 - Factorization by Cross-method}\phantomsection\label{section:3-1-1}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q03} \problem[Samp-P1-Q3]{DSE2012S-CoreP1-Q03}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q03} \problem[Prac-P1-Q3]{DSE2012P-CoreP1-Q03}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q02} \problem[2014-P1-Q2]{DSE2014-CoreP1-Q02}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q04} \problem[2016-P1-Q4]{DSE2016-CoreP1-Q04}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q03} \problem[2017-P1-Q3]{DSE2017-CoreP1-Q03}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q04} \problem[2019-P1-Q4]{DSE2019-CoreP1-Q04}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q02} \problem[2020-P1-Q2]{DSE2020-CoreP1-Q02}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q03} \problem[2021-P1-Q3]{DSE2021-CoreP1-Q03}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q04} \problem[2022-P1-Q4]{DSE2022-CoreP1-Q04}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP1-Q03} \problem[2024-P1-Q3]{DSE2024-CoreP1-Q03}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=11]
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q01} \problem[2017-P2-Q1]{DSE2017-CoreP2-Q01}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q03} \problem[2018-P2-Q3]{DSE2018-CoreP2-Q03}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q04} \problem[2023-P2-Q4]{DSE2023-CoreP2-Q04}
+\end{enumx}
+
+
+
+
+% S3 Ch1 - 1.2 Sum and Difference of Two  Cubes \NF
+\section*{Section 1.2 - Sum and Difference of Two  Cubes \NF}\phantomsection\label{section:3-1-2}
+
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012S-CoreP1-Q03}
+\item \problemans{DSE2012P-CoreP1-Q03}
+\item \problemans{DSE2014-CoreP1-Q02}
+\item \problemans{DSE2016-CoreP1-Q04}
+\item \problemans{DSE2017-CoreP1-Q03}
+\item \problemans{DSE2019-CoreP1-Q04}
+\item \problemans{DSE2020-CoreP1-Q02}
+\item \problemans{DSE2021-CoreP1-Q03}
+\item \problemans{DSE2022-CoreP1-Q04}
+\item \problemans{DSE2024-CoreP1-Q03}
+\item \problemans{DSE2017-CoreP2-Q01}
+\item \problemans{DSE2018-CoreP2-Q03}
+\item \problemans{DSE2023-CoreP2-Q04}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Linear Inequalities in One Unknown}
+\lfoot{S3-Ch2}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch2}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Linear Inequalities in One Unknown}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-2}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 2.\arabic*\ ]
+\item \hyperref[section:3-2-1]{Concepts of Inequalities}
+\item \hyperref[section:3-2-2]{Basic Properties of Inequalities}
+\item \hyperref[section:3-2-3]{Linear Inequalities in One Unknown}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 2.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 2.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 2.3 &  &  &  &  &  $1$ &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 2.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 2.2 &  &  &  &  &  $1$ &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 2.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+        & 2.1 & 2.2 & 2.3 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  \\
+\hline
+Paper 1 - B&  &  &  \\
+\hline
+\hline
+Paper 2 - A&  & \hyperref[DSE2014-CoreP2-Q06]{2014-P2-Q6} &  \\
+\hline
+Paper 2 - B&  &  &  \\
+\hline
+\hline
+Cross Topic&  &  & \hyperref[DSE2014-CoreP1-Q16]{2014-P1-Q16} \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch2 - 2.1 Concepts of Inequalities
+\section*{Section 2.1 - Concepts of Inequalities}\phantomsection\label{section:3-2-1}
+
+
+
+
+
+% S3 Ch2 - 2.2 Basic Properties of Inequalities
+\section*{Section 2.2 - Basic Properties of Inequalities}\phantomsection\label{section:3-2-2}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q06} \problem[2014-P2-Q6]{DSE2014-CoreP2-Q06}
+\end{enumx}
+
+
+
+
+% S3 Ch2 - 2.3 Linear Inequalities in One Unknown
+\section*{Section 2.3 - Linear Inequalities in One Unknown}\phantomsection\label{section:3-2-3}
+
+\textbf{Cross Topic}
+\begin{enumx}[label=\arabic*.,start=2]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q16} \problem[2014-P1-Q16]{DSE2014-CoreP1-Q16}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2014-CoreP2-Q06}
+\item \problemans{DSE2014-CoreP1-Q16}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Percentages (II)}
+\lfoot{S3-Ch3}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch3}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Percentages (II)}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-3}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 3.\arabic*\ ]
+\item \hyperref[section:3-3-1]{More about Percentage Changes}
+\item \hyperref[section:3-3-2]{Increase or Decrease at a Constant Rate}
+\item \hyperref[section:3-3-3]{Interest}
+\item \hyperref[section:3-3-4]{Taxation }
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 3.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 3.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 3.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 3.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 3.1 &  $1$ &  &  &  &  $1$ &  $1$ &  $1$ &  &  &  &  $1$ &  &  &  &  &  \\\hline
+Sec 3.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 3.3 &  $1$ &  &  &  $1$ &  &  $1$ &  &  $1$ &  $1$ &  $1$ &  &  &  $1$ &  &  &  \\\hline
+Sec 3.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+        & 3.1 & 3.2 & 3.3 & 3.4 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  &  \\
+\hline
+Paper 1 - B&  &  &  &  \\
+\hline
+\hline
+Paper 2 - A& \hyperref[DSE2012S-CoreP2-Q12]{Samp-P2-Q12} &  & \hyperref[DSE2013-CoreP2-Q11]{2013-P2-Q11} &  \\
+& \hyperref[DSE2015-CoreP2-Q09]{2015-P2-Q9} &  & \hyperref[DSE2015-CoreP2-Q10]{2015-P2-Q10} &  \\
+& \hyperref[DSE2016-CoreP2-Q10]{2016-P2-Q10} &  & \hyperref[DSE2017-CoreP2-Q10]{2017-P2-Q10} &  \\
+& \hyperref[DSE2020-CoreP2-Q15]{2020-P2-Q15} &  & \hyperref[DSE2018-CoreP2-Q09]{2018-P2-Q9} &  \\
+&  &  & \hyperref[DSE2019-CoreP2-Q11]{2019-P2-Q11} &  \\
+&  &  & \hyperref[DSE2022-CoreP2-Q11]{2022-P2-Q11} &  \\
+\hline
+Paper 2 - B&  &  & \hyperref[DSE2012S-CoreP2-Q39]{Samp-P2-Q39} &  \\
+\hline
+\hline
+Cross Topic& \hyperref[DSE2014-CoreP2-Q10]{2014-P2-Q10} &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch3 - 3.1 More about Percentage Changes
+\section*{Section 3.1 - More about Percentage Changes}\phantomsection\label{section:3-3-1}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q12} \problem[Samp-P2-Q12]{DSE2012S-CoreP2-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q09} \problem[2015-P2-Q9]{DSE2015-CoreP2-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q10} \problem[2016-P2-Q10]{DSE2016-CoreP2-Q10}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q15} \problem[2020-P2-Q15]{DSE2020-CoreP2-Q15}
+\end{enumx}
+\textbf{Cross Topic}
+\begin{enumx}[label=\arabic*.,start=5]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q10} \problem[2014-P2-Q10]{DSE2014-CoreP2-Q10}
+\end{enumx}
+
+
+
+
+% S3 Ch3 - 3.2 Increase or Decrease at a Constant Rate
+\section*{Section 3.2 - Increase or Decrease at a Constant Rate}\phantomsection\label{section:3-3-2}
+
+
+
+
+
+% S3 Ch3 - 3.3 Interest
+\section*{Section 3.3 - Interest}\phantomsection\label{section:3-3-3}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=6]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q11} \problem[2013-P2-Q11]{DSE2013-CoreP2-Q11}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q10} \problem[2015-P2-Q10]{DSE2015-CoreP2-Q10}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q10} \problem[2017-P2-Q10]{DSE2017-CoreP2-Q10}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q09} \problem[2018-P2-Q9]{DSE2018-CoreP2-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q11} \problem[2019-P2-Q11]{DSE2019-CoreP2-Q11}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q11} \problem[2022-P2-Q11]{DSE2022-CoreP2-Q11}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=12]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q39} \problem[Samp-P2-Q39]{DSE2012S-CoreP2-Q39}
+\end{enumx}
+
+
+
+
+% S3 Ch3 - 3.4 Taxation 
+\section*{Section 3.4 - Taxation }\phantomsection\label{section:3-3-4}
+
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012S-CoreP2-Q12}
+\item \problemans{DSE2015-CoreP2-Q09}
+\item \problemans{DSE2016-CoreP2-Q10}
+\item \problemans{DSE2020-CoreP2-Q15}
+\item \problemans{DSE2014-CoreP2-Q10}
+\item \problemans{DSE2013-CoreP2-Q11}
+\item \problemans{DSE2015-CoreP2-Q10}
+\item \problemans{DSE2017-CoreP2-Q10}
+\item \problemans{DSE2018-CoreP2-Q09}
+\item \problemans{DSE2019-CoreP2-Q11}
+\item \problemans{DSE2022-CoreP2-Q11}
+\item \problemans{DSE2012S-CoreP2-Q39}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Special Lines and Centres in a Triangle}
+\lfoot{S3-Ch4}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch4}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Special Lines and Centres in a Triangle}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-4}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 4.\arabic*\ ]
+\item \hyperref[section:3-4-1]{Special Lines in a Triangle}
+\item \hyperref[section:3-4-2]{Centres of a Triangle \NF}
+\item \hyperref[section:3-4-3]{Triangle Inequality \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 4.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 4.2 &  $2$ &  &  &  &  &  &  $6$ &  &  &  &  &  &  &  &  &  \\\hline
+Sec 4.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 4.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 4.2 &  &  $1$ &  &  $1$ &  &  $1$ &  &  $1$ &  $1$ &  $1$ &  &  &  &  &  $1$ &  \\\hline
+Sec 4.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+        & 4.1 & 4.2 & 4.3 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  \\
+\hline
+Paper 1 - B&  &  &  \\
+\hline
+\hline
+Paper 2 - A&  &  &  \\
+\hline
+Paper 2 - B&  & \hyperref[DSE2019-CoreP2-Q41]{2019-P2-Q41} &  \\
+&  & \hyperref[DSE2024-CoreP2-Q41]{2024-P2-Q41} &  \\
+\hline
+\hline
+Cross Topic&  & \hyperref[DSE2012S-CoreP1-Q19]{Samp-P1-Q19} &  \\
+&  & \hyperref[DSE2012P-CoreP2-Q42]{Prac-P2-Q42} &  \\
+&  & \hyperref[DSE2013-CoreP2-Q43]{2013-P2-Q43} &  \\
+&  & \hyperref[DSE2015-CoreP2-Q42]{2015-P2-Q42} &  \\
+&  & \hyperref[DSE2016-CoreP1-Q20]{2016-P1-Q20} &  \\
+&  & \hyperref[DSE2017-CoreP2-Q41]{2017-P2-Q41} &  \\
+&  & \hyperref[DSE2018-CoreP2-Q40]{2018-P2-Q40} &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch4 - 4.1 Special Lines in a Triangle
+\section*{Section 4.1 - Special Lines in a Triangle}\phantomsection\label{section:3-4-1}
+
+
+
+
+
+% S3 Ch4 - 4.2 Centres of a Triangle \NF
+\section*{Section 4.2 - Centres of a Triangle \NF}\phantomsection\label{section:3-4-2}
+
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q41} \problem[2019-P2-Q41]{DSE2019-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q41} \problem[2024-P2-Q41]{DSE2024-CoreP2-Q41}
+\end{enumx}
+\textbf{Cross Topic}
+\begin{enumx}[label=\arabic*.,start=3]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q19} \problem[Samp-P1-Q19]{DSE2012S-CoreP1-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q42} \problem[Prac-P2-Q42]{DSE2012P-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q43} \problem[2013-P2-Q43]{DSE2013-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q42} \problem[2015-P2-Q42]{DSE2015-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q20} \problem[2016-P1-Q20]{DSE2016-CoreP1-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q41} \problem[2017-P2-Q41]{DSE2017-CoreP2-Q41}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q40} \problem[2018-P2-Q40]{DSE2018-CoreP2-Q40}
+\end{enumx}
+
+
+
+
+% S3 Ch4 - 4.3 Triangle Inequality \NF
+\section*{Section 4.3 - Triangle Inequality \NF}\phantomsection\label{section:3-4-3}
+
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2019-CoreP2-Q41}
+\item \problemans{DSE2024-CoreP2-Q41}
+\item \problemans{DSE2012S-CoreP1-Q19}
+\item \problemans{DSE2012P-CoreP2-Q42}
+\item \problemans{DSE2013-CoreP2-Q43}
+\item \problemans{DSE2015-CoreP2-Q42}
+\item \problemans{DSE2016-CoreP1-Q20}
+\item \problemans{DSE2017-CoreP2-Q41}
+\item \problemans{DSE2018-CoreP2-Q40}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Quadrilaterals}
+\lfoot{S3-Ch5}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch5}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Quadrilaterals}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-5}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 5.\arabic*\ ]
+\item \hyperref[section:3-5-1]{Basic Terms of a Quadrilateral}
+\item \hyperref[section:3-5-2]{Parallelograms}
+\item \hyperref[section:3-5-3]{Properties of Some Other Special Quadrilaterals}
+\item \hyperref[section:3-5-4]{Geometric Proofs Related  to Parallelograms  \NF}
+\item \hyperref[section:3-5-5]{Mid-point Theorem and Intercept Theorem  \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 5.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 5.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 5.3 &  &  &  &  &  &  $7$ &  &  &  &  $8$ &  &  &  &  &  &  \\\hline
+Sec 5.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 5.5 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 5.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 5.2 &  $1$ &  &  $1$ &  &  &  $1$ &  $1$ &  $2$ &  $1$ &  $1$ &  &  &  &  &  &  \\\hline
+Sec 5.3 &  &  $2$ &  &  $1$ &  $2$ &  &  $1$ &  &  $2$ &  $1$ &  &  &  &  $2$ &  $1$ &  \\\hline
+Sec 5.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  $1$ &  $1$ &  \\\hline
+Sec 5.5 &  $1$ &  &  &  &  &  &  &  &  &  $1$ &  $1$ &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+        & 5.1 & 5.2 & 5.3 & 5.4 & 5.5 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  & \hyperref[DSE2015-CoreP1-Q13]{2015-P1-Q13} &  &  \\
+&  &  & \hyperref[DSE2019-CoreP1-Q14]{2019-P1-Q14} &  &  \\
+\hline
+Paper 1 - B&  &  &  &  &  \\
+\hline
+\hline
+Paper 2 - A&  & \hyperref[DSE2012S-CoreP2-Q18]{Samp-P2-Q18} & \hyperref[DSE2012P-CoreP2-Q17]{Prac-P2-Q17} & \hyperref[DSE2023-CoreP2-Q21]{2023-P2-Q21} & \hyperref[DSE2012S-CoreP2-Q23]{Samp-P2-Q23} \\
+&  & \hyperref[DSE2012-CoreP2-Q17]{2012-P2-Q17} & \hyperref[DSE2012P-CoreP2-Q22]{Prac-P2-Q22} & \hyperref[DSE2024-CoreP2-Q21]{2024-P2-Q21} & \hyperref[DSE2019-CoreP2-Q18]{2019-P2-Q18} \\
+&  & \hyperref[DSE2015-CoreP2-Q17]{2015-P2-Q17} & \hyperref[DSE2013-CoreP2-Q18]{2013-P2-Q18} &  & \hyperref[DSE2020-CoreP2-Q18]{2020-P2-Q18} \\
+&  & \hyperref[DSE2016-CoreP2-Q17]{2016-P2-Q17} & \hyperref[DSE2014-CoreP2-Q16]{2014-P2-Q16} &  &  \\
+&  & \hyperref[DSE2017-CoreP2-Q16]{2017-P2-Q16} & \hyperref[DSE2014-CoreP2-Q17]{2014-P2-Q17} &  &  \\
+&  & \hyperref[DSE2017-CoreP2-Q20]{2017-P2-Q20} & \hyperref[DSE2016-CoreP2-Q20]{2016-P2-Q20} &  &  \\
+&  & \hyperref[DSE2018-CoreP2-Q16]{2018-P2-Q16} & \hyperref[DSE2018-CoreP2-Q18]{2018-P2-Q18} &  &  \\
+&  & \hyperref[DSE2019-CoreP2-Q16]{2019-P2-Q16} & \hyperref[DSE2018-CoreP2-Q20]{2018-P2-Q20} &  &  \\
+&  &  & \hyperref[DSE2019-CoreP2-Q20]{2019-P2-Q20} &  &  \\
+&  &  & \hyperref[DSE2023-CoreP2-Q17]{2023-P2-Q17} &  &  \\
+&  &  & \hyperref[DSE2023-CoreP2-Q19]{2023-P2-Q19} &  &  \\
+&  &  & \hyperref[DSE2024-CoreP2-Q17]{2024-P2-Q17} &  &  \\
+\hline
+Paper 2 - B&  &  &  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch5 - 5.1 Basic Terms of a Quadrilateral
+\section*{Section 5.1 - Basic Terms of a Quadrilateral}\phantomsection\label{section:3-5-1}
+
+
+
+
+
+% S3 Ch5 - 5.2 Parallelograms
+\section*{Section 5.2 - Parallelograms}\phantomsection\label{section:3-5-2}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q18} \problem[Samp-P2-Q18]{DSE2012S-CoreP2-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q17} \problem[2012-P2-Q17]{DSE2012-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q17} \problem[2015-P2-Q17]{DSE2015-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q17} \problem[2016-P2-Q17]{DSE2016-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q16} \problem[2017-P2-Q16]{DSE2017-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q20} \problem[2017-P2-Q20]{DSE2017-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q16} \problem[2018-P2-Q16]{DSE2018-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q16} \problem[2019-P2-Q16]{DSE2019-CoreP2-Q16}
+\end{enumx}
+
+
+
+
+% S3 Ch5 - 5.3 Properties of Some Other Special Quadrilaterals
+\section*{Section 5.3 - Properties of Some Other Special Quadrilaterals}\phantomsection\label{section:3-5-3}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=9]
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q13} \problem[2015-P1-Q13]{DSE2015-CoreP1-Q13}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q14} \problem[2019-P1-Q14]{DSE2019-CoreP1-Q14}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=11]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q17} \problem[Prac-P2-Q17]{DSE2012P-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q22} \problem[Prac-P2-Q22]{DSE2012P-CoreP2-Q22}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q18} \problem[2013-P2-Q18]{DSE2013-CoreP2-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q16} \problem[2014-P2-Q16]{DSE2014-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q17} \problem[2014-P2-Q17]{DSE2014-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q20} \problem[2016-P2-Q20]{DSE2016-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q18} \problem[2018-P2-Q18]{DSE2018-CoreP2-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q20} \problem[2018-P2-Q20]{DSE2018-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q20} \problem[2019-P2-Q20]{DSE2019-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q17} \problem[2023-P2-Q17]{DSE2023-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q19} \problem[2023-P2-Q19]{DSE2023-CoreP2-Q19}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q17} \problem[2024-P2-Q17]{DSE2024-CoreP2-Q17}
+\end{enumx}
+
+
+
+
+% S3 Ch5 - 5.4 Geometric Proofs Related  to Parallelograms  \NF
+\section*{Section 5.4 - Geometric Proofs Related  to Parallelograms  \NF}\phantomsection\label{section:3-5-4}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=23]
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q21} \problem[2023-P2-Q21]{DSE2023-CoreP2-Q21}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q21} \problem[2024-P2-Q21]{DSE2024-CoreP2-Q21}
+\end{enumx}
+
+
+
+
+% S3 Ch5 - 5.5 Mid-point Theorem and Intercept Theorem  \NF
+\section*{Section 5.5 - Mid-point Theorem and Intercept Theorem  \NF}\phantomsection\label{section:3-5-5}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=25]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q23} \problem[Samp-P2-Q23]{DSE2012S-CoreP2-Q23}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q18} \problem[2019-P2-Q18]{DSE2019-CoreP2-Q18}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q18} \problem[2020-P2-Q18]{DSE2020-CoreP2-Q18}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012S-CoreP2-Q18}
+\item \problemans{DSE2012-CoreP2-Q17}
+\item \problemans{DSE2015-CoreP2-Q17}
+\item \problemans{DSE2016-CoreP2-Q17}
+\item \problemans{DSE2017-CoreP2-Q16}
+\item \problemans{DSE2017-CoreP2-Q20}
+\item \problemans{DSE2018-CoreP2-Q16}
+\item \problemans{DSE2019-CoreP2-Q16}
+\item \problemans{DSE2015-CoreP1-Q13}
+\item \problemans{DSE2019-CoreP1-Q14}
+\item \problemans{DSE2012P-CoreP2-Q17}
+\item \problemans{DSE2012P-CoreP2-Q22}
+\item \problemans{DSE2013-CoreP2-Q18}
+\item \problemans{DSE2014-CoreP2-Q16}
+\item \problemans{DSE2014-CoreP2-Q17}
+\item \problemans{DSE2016-CoreP2-Q20}
+\item \problemans{DSE2018-CoreP2-Q18}
+\item \problemans{DSE2018-CoreP2-Q20}
+\item \problemans{DSE2019-CoreP2-Q20}
+\item \problemans{DSE2023-CoreP2-Q17}
+\item \problemans{DSE2023-CoreP2-Q19}
+\item \problemans{DSE2024-CoreP2-Q17}
+\item \problemans{DSE2023-CoreP2-Q21}
+\item \problemans{DSE2024-CoreP2-Q21}
+\item \problemans{DSE2012S-CoreP2-Q23}
+\item \problemans{DSE2019-CoreP2-Q18}
+\item \problemans{DSE2020-CoreP2-Q18}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{More about 3-D Figures}
+\lfoot{S3-Ch6}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch6}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {More about 3-D Figures}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-6}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 6.\arabic*\ ]
+\item \hyperref[section:3-6-1]{Symmetries of Solids}
+\item \hyperref[section:3-6-2]{Nets of Solids}
+\item \hyperref[section:3-6-3]{2-D Representations of Solids}
+\item \hyperref[section:3-6-4]{Points, Lines and Planes in Solids}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 6.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 6.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 6.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 6.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 6.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 6.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 6.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 6.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+        & 6.1 & 6.2 & 6.3 & 6.4 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  &  \\
+\hline
+Paper 1 - B&  &  &  &  \\
+\hline
+\hline
+Paper 2 - A&  &  &  &  \\
+\hline
+Paper 2 - B&  &  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch6 - 6.1 Symmetries of Solids
+\section*{Section 6.1 - Symmetries of Solids}\phantomsection\label{section:3-6-1}
+
+
+
+
+
+% S3 Ch6 - 6.2 Nets of Solids
+\section*{Section 6.2 - Nets of Solids}\phantomsection\label{section:3-6-2}
+
+
+
+
+
+% S3 Ch6 - 6.3 2-D Representations of Solids
+\section*{Section 6.3 - 2-D Representations of Solids}\phantomsection\label{section:3-6-3}
+
+
+
+
+
+% S3 Ch6 - 6.4 Points, Lines and Planes in Solids
+\section*{Section 6.4 - Points, Lines and Planes in Solids}\phantomsection\label{section:3-6-4}
+
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Areas and Volumes (III)}
+\lfoot{S3-Ch7}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch7}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Areas and Volumes (III)}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-7}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 7.\arabic*\ ]
+\item \hyperref[section:3-7-1]{Pyramids}
+\item \hyperref[section:3-7-2]{Circular Cones}
+\item \hyperref[section:3-7-3]{Frustums}
+\item \hyperref[section:3-7-4]{Spheres}
+\item \hyperref[section:3-7-5]{Formulas for Lengths, Areas and Volumes}
+\item \hyperref[section:3-7-6]{Similar Shapes}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 7.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 7.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 7.3 &  &  &  &  &  $8$ &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 7.4 &  $4$ &  &  $7$ &  &  &  &  &  &  $9$ &  $5$ &  &  &  &  &  &  \\\hline
+Sec 7.5 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 7.6 &  &  &  &  $7$ &  &  &  $6$ &  $7$ &  &  &  $6$ &  $8$ &  $7$ &  $8$ &  $7$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 7.1 &  &  &  &  $1$ &  &  &  &  &  &  $1$ &  &  &  &  &  &  \\\hline
+Sec 7.2 &  &  $1$ &  &  &  &  &  &  $1$ &  &  &  $1$ &  &  &  &  $1$ &  \\\hline
+Sec 7.3 &  &  &  &  &  &  $1$ &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 7.4 &  $1$ &  &  &  $1$ &  &  &  &  &  &  &  &  &  $1$ &  &  &  \\\hline
+Sec 7.5 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 7.6 &  &  &  &  &  &  &  &  &  &  &  $1$ &  $1$ &  $1$ &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+        & 7.1 & 7.2 & 7.3 & 7.4 & 7.5 & 7.6 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  & \hyperref[DSE2012S-CoreP1-Q06]{Samp-P1-Q6} &  &  \\
+&  &  &  & \hyperref[DSE2019-CoreP1-Q09]{2019-P1-Q9} &  &  \\
+\hline
+Paper 1 - A(2)&  &  & \hyperref[DSE2014-CoreP1-Q14]{2014-P1-Q14} & \hyperref[DSE2012-CoreP1-Q12]{2012-P1-Q12} &  & \hyperref[DSE2013-CoreP1-Q13]{2013-P1-Q13} \\
+&  &  &  & \hyperref[DSE2018-CoreP1-Q14]{2018-P1-Q14} &  & \hyperref[DSE2016-CoreP1-Q11]{2016-P1-Q11} \\
+&  &  &  &  &  & \hyperref[DSE2017-CoreP1-Q12]{2017-P1-Q12} \\
+&  &  &  &  &  & \hyperref[DSE2020-CoreP1-Q12]{2020-P1-Q12} \\
+&  &  &  &  &  & \hyperref[DSE2021-CoreP1-Q14]{2021-P1-Q14} \\
+&  &  &  &  &  & \hyperref[DSE2022-CoreP1-Q13]{2022-P1-Q13} \\
+&  &  &  &  &  & \hyperref[DSE2023-CoreP1-Q14]{2023-P1-Q14} \\
+&  &  &  &  &  & \hyperref[DSE2024-CoreP1-Q13]{2024-P1-Q13} \\
+\hline
+Paper 1 - B&  &  &  &  &  &  \\
+\hline
+\hline
+Paper 2 - A& \hyperref[DSE2019-CoreP2-Q15]{2019-P2-Q15} & \hyperref[DSE2012P-CoreP2-Q16]{Prac-P2-Q16} & \hyperref[DSE2015-CoreP2-Q16]{2015-P2-Q16} & \hyperref[DSE2012S-CoreP2-Q17]{Samp-P2-Q17} &  & \hyperref[DSE2020-CoreP2-Q17]{2020-P2-Q17} \\
+&  & \hyperref[DSE2017-CoreP2-Q15]{2017-P2-Q15} &  & \hyperref[DSE2013-CoreP2-Q17]{2013-P2-Q17} &  & \hyperref[DSE2021-CoreP2-Q16]{2021-P2-Q16} \\
+&  & \hyperref[DSE2020-CoreP2-Q16]{2020-P2-Q16} &  & \hyperref[DSE2022-CoreP2-Q15]{2022-P2-Q15} &  & \hyperref[DSE2022-CoreP2-Q22]{2022-P2-Q22} \\
+&  & \hyperref[DSE2024-CoreP2-Q16]{2024-P2-Q16} &  &  &  &  \\
+\hline
+Paper 2 - B& \hyperref[DSE2013-CoreP2-Q40]{2013-P2-Q40} &  &  &  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch7 - 7.1 Pyramids
+\section*{Section 7.1 - Pyramids}\phantomsection\label{section:3-7-1}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q15} \problem[2019-P2-Q15]{DSE2019-CoreP2-Q15}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=2]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q40} \problem[2013-P2-Q40]{DSE2013-CoreP2-Q40}
+\end{enumx}
+
+
+
+
+% S3 Ch7 - 7.2 Circular Cones
+\section*{Section 7.2 - Circular Cones}\phantomsection\label{section:3-7-2}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=3]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q16} \problem[Prac-P2-Q16]{DSE2012P-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q15} \problem[2017-P2-Q15]{DSE2017-CoreP2-Q15}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q16} \problem[2020-P2-Q16]{DSE2020-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q16} \problem[2024-P2-Q16]{DSE2024-CoreP2-Q16}
+\end{enumx}
+
+
+
+
+% S3 Ch7 - 7.3 Frustums
+\section*{Section 7.3 - Frustums}\phantomsection\label{section:3-7-3}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=7]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q14} \problem[2014-P1-Q14]{DSE2014-CoreP1-Q14}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=8]
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q16} \problem[2015-P2-Q16]{DSE2015-CoreP2-Q16}
+\end{enumx}
+
+
+
+
+% S3 Ch7 - 7.4 Spheres
+\section*{Section 7.4 - Spheres}\phantomsection\label{section:3-7-4}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=9]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q06} \problem[Samp-P1-Q6]{DSE2012S-CoreP1-Q06}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q09} \problem[2019-P1-Q9]{DSE2019-CoreP1-Q09}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=11]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q12} \problem[2012-P1-Q12]{DSE2012-CoreP1-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q14} \problem[2018-P1-Q14]{DSE2018-CoreP1-Q14}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=13]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q17} \problem[Samp-P2-Q17]{DSE2012S-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q17} \problem[2013-P2-Q17]{DSE2013-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q15} \problem[2022-P2-Q15]{DSE2022-CoreP2-Q15}
+\end{enumx}
+
+
+
+
+% S3 Ch7 - 7.5 Formulas for Lengths, Areas and Volumes
+\section*{Section 7.5 - Formulas for Lengths, Areas and Volumes}\phantomsection\label{section:3-7-5}
+
+
+
+
+
+% S3 Ch7 - 7.6 Similar Shapes
+\section*{Section 7.6 - Similar Shapes}\phantomsection\label{section:3-7-6}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=16]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP1-Q13} \problem[2013-P1-Q13]{DSE2013-CoreP1-Q13}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q11} \problem[2016-P1-Q11]{DSE2016-CoreP1-Q11}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q12} \problem[2017-P1-Q12]{DSE2017-CoreP1-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP1-Q12} \problem[2020-P1-Q12]{DSE2020-CoreP1-Q12}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q14} \problem[2021-P1-Q14]{DSE2021-CoreP1-Q14}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q13} \problem[2022-P1-Q13]{DSE2022-CoreP1-Q13}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP1-Q14} \problem[2023-P1-Q14]{DSE2023-CoreP1-Q14}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP1-Q13} \problem[2024-P1-Q13]{DSE2024-CoreP1-Q13}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=24]
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q17} \problem[2020-P2-Q17]{DSE2020-CoreP2-Q17}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q16} \problem[2021-P2-Q16]{DSE2021-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q22} \problem[2022-P2-Q22]{DSE2022-CoreP2-Q22}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2019-CoreP2-Q15}
+\item \problemans{DSE2013-CoreP2-Q40}
+\item \problemans{DSE2012P-CoreP2-Q16}
+\item \problemans{DSE2017-CoreP2-Q15}
+\item \problemans{DSE2020-CoreP2-Q16}
+\item \problemans{DSE2024-CoreP2-Q16}
+\item \problemans{DSE2014-CoreP1-Q14}
+\item \problemans{DSE2015-CoreP2-Q16}
+\item \problemans{DSE2012S-CoreP1-Q06}
+\item \problemans{DSE2019-CoreP1-Q09}
+\item \problemans{DSE2012-CoreP1-Q12}
+\item \problemans{DSE2018-CoreP1-Q14}
+\item \problemans{DSE2012S-CoreP2-Q17}
+\item \problemans{DSE2013-CoreP2-Q17}
+\item \problemans{DSE2022-CoreP2-Q15}
+\item \problemans{DSE2013-CoreP1-Q13}
+\item \problemans{DSE2016-CoreP1-Q11}
+\item \problemans{DSE2017-CoreP1-Q12}
+\item \problemans{DSE2020-CoreP1-Q12}
+\item \problemans{DSE2021-CoreP1-Q14}
+\item \problemans{DSE2022-CoreP1-Q13}
+\item \problemans{DSE2023-CoreP1-Q14}
+\item \problemans{DSE2024-CoreP1-Q13}
+\item \problemans{DSE2020-CoreP2-Q17}
+\item \problemans{DSE2021-CoreP2-Q16}
+\item \problemans{DSE2022-CoreP2-Q22}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Coordinate Geometry of Straight Lines}
+\lfoot{S3-Ch8}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch8}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Coordinate Geometry of Straight Lines}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-8}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 8.\arabic*\ ]
+\item \hyperref[section:3-8-1]{Distance between Any Two Points on a Plane}
+\item \hyperref[section:3-8-2]{Slope of a Straight Line}
+\item \hyperref[section:3-8-3]{Parallel and Perpendicular Lines}
+\item \hyperref[section:3-8-4]{Point of Division}
+\item \hyperref[section:3-8-5]{Using Analytic Approach to Prove Results Relating to Rectilinear Figures \NF}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 8.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.3 &  $3$ &  &  &  &  $5$ &  &  &  $4$ &  &  &  &  &  &  &  &  \\\hline
+Sec 8.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.5 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 8.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.3 &  &  $1$ &  &  $1$ &  &  $1$ &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 8.5 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+        & 8.1 & 8.2 & 8.3 & 8.4 & 8.5 \\\hline
+\hline
+Paper 1 - A(1)&  &  & \hyperref[DSE2012S-CoreP1-Q08]{Samp-P1-Q8} &  &  \\
+&  &  & \hyperref[DSE2014-CoreP1-Q08]{2014-P1-Q8} &  &  \\
+&  &  & \hyperref[DSE2017-CoreP1-Q06]{2017-P1-Q6} &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  &  &  \\
+\hline
+Paper 1 - B&  &  &  &  &  \\
+\hline
+\hline
+Paper 2 - A&  &  &  &  &  \\
+\hline
+Paper 2 - B&  &  & \hyperref[DSE2012P-CoreP2-Q42]{Prac-P2-Q42} &  &  \\
+&  &  & \hyperref[DSE2013-CoreP2-Q43]{2013-P2-Q43} &  &  \\
+&  &  & \hyperref[DSE2015-CoreP2-Q42]{2015-P2-Q42} &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch8 - 8.1 Distance between Any Two Points on a Plane
+\section*{Section 8.1 - Distance between Any Two Points on a Plane}\phantomsection\label{section:3-8-1}
+
+
+
+
+
+% S3 Ch8 - 8.2 Slope of a Straight Line
+\section*{Section 8.2 - Slope of a Straight Line}\phantomsection\label{section:3-8-2}
+
+
+
+
+
+% S3 Ch8 - 8.3 Parallel and Perpendicular Lines
+\section*{Section 8.3 - Parallel and Perpendicular Lines}\phantomsection\label{section:3-8-3}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP1-Q08} \problem[Samp-P1-Q8]{DSE2012S-CoreP1-Q08}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP1-Q08} \problem[2014-P1-Q8]{DSE2014-CoreP1-Q08}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q06} \problem[2017-P1-Q6]{DSE2017-CoreP1-Q06}
+\end{enumx}
+\textbf{Paper 2 - B}
+\begin{enumx}[label=\arabic*.,start=4]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q42} \problem[Prac-P2-Q42]{DSE2012P-CoreP2-Q42}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q43} \problem[2013-P2-Q43]{DSE2013-CoreP2-Q43}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q42} \problem[2015-P2-Q42]{DSE2015-CoreP2-Q42}
+\end{enumx}
+
+
+
+
+% S3 Ch8 - 8.4 Point of Division
+\section*{Section 8.4 - Point of Division}\phantomsection\label{section:3-8-4}
+
+
+
+
+
+% S3 Ch8 - 8.5 Using Analytic Approach to Prove Results Relating to Rectilinear Figures \NF
+\section*{Section 8.5 - Using Analytic Approach to Prove Results Relating to Rectilinear Figures \NF}\phantomsection\label{section:3-8-5}
+
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2012S-CoreP1-Q08}
+\item \problemans{DSE2014-CoreP1-Q08}
+\item \problemans{DSE2017-CoreP1-Q06}
+\item \problemans{DSE2012P-CoreP2-Q42}
+\item \problemans{DSE2013-CoreP2-Q43}
+\item \problemans{DSE2015-CoreP2-Q42}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Trigonometric Relations}
+\lfoot{S3-Ch9}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch9}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Trigonometric Relations}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-9}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 9.\arabic*\ ]
+\item \hyperref[section:3-9-1]{Trigonometric Ratios of Special Angles}
+\item \hyperref[section:3-9-2]{Finding Trigonometric Ratios by Constructing Right-Angled Triangles}
+\item \hyperref[section:3-9-3]{Trigonometric Identities}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 9.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 9.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 9.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 9.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  $1$ &  &  \\\hline
+Sec 9.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 9.3 &  &  &  &  $1$ &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+        & 9.1 & 9.2 & 9.3 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  \\
+\hline
+Paper 1 - B&  &  &  \\
+\hline
+\hline
+Paper 2 - A& \hyperref[DSE2023-CoreP2-Q23]{2023-P2-Q23} &  & \hyperref[DSE2013-CoreP2-Q23]{2013-P2-Q23} \\
+\hline
+Paper 2 - B&  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch9 - 9.1 Trigonometric Ratios of Special Angles
+\section*{Section 9.1 - Trigonometric Ratios of Special Angles}\phantomsection\label{section:3-9-1}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q23} \problem[2023-P2-Q23]{DSE2023-CoreP2-Q23}
+\end{enumx}
+
+
+
+
+% S3 Ch9 - 9.2 Finding Trigonometric Ratios by Constructing Right-Angled Triangles
+\section*{Section 9.2 - Finding Trigonometric Ratios by Constructing Right-Angled Triangles}\phantomsection\label{section:3-9-2}
+
+
+
+
+
+% S3 Ch9 - 9.3 Trigonometric Identities
+\section*{Section 9.3 - Trigonometric Identities}\phantomsection\label{section:3-9-3}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=2]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q23} \problem[2013-P2-Q23]{DSE2013-CoreP2-Q23}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2023-CoreP2-Q23}
+\item \problemans{DSE2013-CoreP2-Q23}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Applications of Trigonometry}
+\lfoot{S3-Ch10}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch10}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Applications of Trigonometry}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-10}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 10.\arabic*\ ]
+\item \hyperref[section:3-10-1]{Gradient and Inclination}
+\item \hyperref[section:3-10-2]{Angles of Elevation and Depression}
+\item \hyperref[section:3-10-3]{Bearings}
+\item \hyperref[section:3-10-4]{Applications of Trigonometry to Rectilinear Figures}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 10.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 10.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 10.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 10.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 10.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 10.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 10.3 &  &  &  &  $1$ &  &  &  &  &  &  &  $1$ &  &  &  &  &  \\\hline
+Sec 10.4 &  &  &  &  $1$ &  &  &  &  &  &  &  &  &  $1$ &  &  $1$ &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+        & 10.1 & 10.2 & 10.3 & 10.4 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  &  \\
+\hline
+Paper 1 - B&  &  &  &  \\
+\hline
+\hline
+Paper 2 - A&  &  & \hyperref[DSE2013-CoreP2-Q20]{2013-P2-Q20} & \hyperref[DSE2013-CoreP2-Q16]{2013-P2-Q16} \\
+&  &  & \hyperref[DSE2020-CoreP2-Q23]{2020-P2-Q23} & \hyperref[DSE2022-CoreP2-Q23]{2022-P2-Q23} \\
+&  &  &  & \hyperref[DSE2024-CoreP2-Q23]{2024-P2-Q23} \\
+\hline
+Paper 2 - B&  &  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch10 - 10.1 Gradient and Inclination
+\section*{Section 10.1 - Gradient and Inclination}\phantomsection\label{section:3-10-1}
+
+
+
+
+
+% S3 Ch10 - 10.2 Angles of Elevation and Depression
+\section*{Section 10.2 - Angles of Elevation and Depression}\phantomsection\label{section:3-10-2}
+
+
+
+
+
+% S3 Ch10 - 10.3 Bearings
+\section*{Section 10.3 - Bearings}\phantomsection\label{section:3-10-3}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q20} \problem[2013-P2-Q20]{DSE2013-CoreP2-Q20}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q23} \problem[2020-P2-Q23]{DSE2020-CoreP2-Q23}
+\end{enumx}
+
+
+
+
+% S3 Ch10 - 10.4 Applications of Trigonometry to Rectilinear Figures
+\section*{Section 10.4 - Applications of Trigonometry to Rectilinear Figures}\phantomsection\label{section:3-10-4}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=3]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q16} \problem[2013-P2-Q16]{DSE2013-CoreP2-Q16}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q23} \problem[2022-P2-Q23]{DSE2022-CoreP2-Q23}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q23} \problem[2024-P2-Q23]{DSE2024-CoreP2-Q23}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2013-CoreP2-Q20}
+\item \problemans{DSE2020-CoreP2-Q23}
+\item \problemans{DSE2013-CoreP2-Q16}
+\item \problemans{DSE2022-CoreP2-Q23}
+\item \problemans{DSE2024-CoreP2-Q23}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Measures of Central Tendency}
+\lfoot{S3-Ch11}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch11}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Measures of Central Tendency}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-11}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 11.\arabic*\ ]
+\item \hyperref[section:3-11-1]{Introduction to Central Tendency }
+\item \hyperref[section:3-11-2]{Means}
+\item \hyperref[section:3-11-3]{Medians}
+\item \hyperref[section:3-11-4]{Modes and Modal Classes}
+\item \hyperref[section:3-11-5]{More about Means, Medians and Modes}
+\item \hyperref[section:3-11-6]{Misuses of Averages}
+\item \hyperref[section:3-11-7]{Effects of Data Change on Measures of Central Tendency \NF}
+\item \hyperref[section:3-11-8]{Weighted Mean}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 11.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.2 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.4 &  &  &  &  &  &  &  &  &  $6$ &  $3$ &  &  &  &  &  &  \\\hline
+Sec 11.5 &  &  &  $6$ &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.6 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.7 &  &  &  &  &  &  &  &  &  &  &  &  $7$ &  &  &  &  \\\hline
+Sec 11.8 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 11.1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.2 &  &  &  &  &  $1$ &  &  &  &  $1$ &  &  &  $1$ &  &  $1$ &  &  \\\hline
+Sec 11.3 &  $1$ &  &  $1$ &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.4 &  &  &  &  $1$ &  &  $1$ &  $1$ &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.5 &  &  &  &  &  &  &  &  &  &  &  $1$ &  &  &  &  &  \\\hline
+Sec 11.6 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.7 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 11.8 &  &  &  &  &  &  &  &  &  &  &  &  &  $1$ &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+        & 11.1 & 11.2 & 11.3 & 11.4 & 11.5 & 11.6 & 11.7 & 11.8 \\\hline
+\hline
+Paper 1 - A(1)&  &  &  &  &  &  &  &  \\
+\hline
+Paper 1 - A(2)&  &  &  & \hyperref[DSE2018-CoreP1-Q11]{2018-P1-Q11} & \hyperref[DSE2012-CoreP1-Q10]{2012-P1-Q10} &  & \hyperref[DSE2021-CoreP1-Q11]{2021-P1-Q11} &  \\
+\hline
+Paper 1 - B&  &  &  &  &  &  &  &  \\
+\hline
+\hline
+Paper 2 - A&  & \hyperref[DSE2014-CoreP2-Q28]{2014-P2-Q28} & \hyperref[DSE2012S-CoreP2-Q28]{Samp-P2-Q28} & \hyperref[DSE2013-CoreP2-Q27]{2013-P2-Q27} & \hyperref[DSE2020-CoreP2-Q30]{2020-P2-Q30} &  &  & \hyperref[DSE2022-CoreP2-Q29]{2022-P2-Q29} \\
+&  & \hyperref[DSE2018-CoreP2-Q29]{2018-P2-Q29} & \hyperref[DSE2012-CoreP2-Q30]{2012-P2-Q30} & \hyperref[DSE2015-CoreP2-Q30]{2015-P2-Q30} &  &  &  &  \\
+&  & \hyperref[DSE2021-CoreP2-Q30]{2021-P2-Q30} &  & \hyperref[DSE2016-CoreP2-Q30]{2016-P2-Q30} &  &  &  &  \\
+&  & \hyperref[DSE2023-CoreP2-Q30]{2023-P2-Q30} &  &  &  &  &  &  \\
+\hline
+Paper 2 - B&  &  &  &  &  &  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  & \hyperref[DSE2019-CoreP1-Q08]{2019-P1-Q8} &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch11 - 11.1 Introduction to Central Tendency 
+\section*{Section 11.1 - Introduction to Central Tendency }\phantomsection\label{section:3-11-1}
+
+
+
+
+
+% S3 Ch11 - 11.2 Means
+\section*{Section 11.2 - Means}\phantomsection\label{section:3-11-2}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q28} \problem[2014-P2-Q28]{DSE2014-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q29} \problem[2018-P2-Q29]{DSE2018-CoreP2-Q29}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q30} \problem[2021-P2-Q30]{DSE2021-CoreP2-Q30}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q30} \problem[2023-P2-Q30]{DSE2023-CoreP2-Q30}
+\end{enumx}
+
+
+
+
+% S3 Ch11 - 11.3 Medians
+\section*{Section 11.3 - Medians}\phantomsection\label{section:3-11-3}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=5]
+\phantomsection
+\item \phantomsection\label{DSE2012S-CoreP2-Q28} \problem[Samp-P2-Q28]{DSE2012S-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q30} \problem[2012-P2-Q30]{DSE2012-CoreP2-Q30}
+\end{enumx}
+
+
+
+
+% S3 Ch11 - 11.4 Modes and Modal Classes
+\section*{Section 11.4 - Modes and Modal Classes}\phantomsection\label{section:3-11-4}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=7]
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q11} \problem[2018-P1-Q11]{DSE2018-CoreP1-Q11}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=8]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q27} \problem[2013-P2-Q27]{DSE2013-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q30} \problem[2015-P2-Q30]{DSE2015-CoreP2-Q30}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q30} \problem[2016-P2-Q30]{DSE2016-CoreP2-Q30}
+\end{enumx}
+\textbf{Cross Topic}
+\begin{enumx}[label=\arabic*.,start=11]
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q08} \problem[2019-P1-Q8]{DSE2019-CoreP1-Q08}
+\end{enumx}
+
+
+
+
+% S3 Ch11 - 11.5 More about Means, Medians and Modes
+\section*{Section 11.5 - More about Means, Medians and Modes}\phantomsection\label{section:3-11-5}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=12]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP1-Q10} \problem[2012-P1-Q10]{DSE2012-CoreP1-Q10}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=13]
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q30} \problem[2020-P2-Q30]{DSE2020-CoreP2-Q30}
+\end{enumx}
+
+
+
+
+% S3 Ch11 - 11.6 Misuses of Averages
+\section*{Section 11.6 - Misuses of Averages}\phantomsection\label{section:3-11-6}
+
+
+
+
+
+% S3 Ch11 - 11.7 Effects of Data Change on Measures of Central Tendency \NF
+\section*{Section 11.7 - Effects of Data Change on Measures of Central Tendency \NF}\phantomsection\label{section:3-11-7}
+
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=14]
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP1-Q11} \problem[2021-P1-Q11]{DSE2021-CoreP1-Q11}
+\end{enumx}
+
+
+
+
+% S3 Ch11 - 11.8 Weighted Mean
+\section*{Section 11.8 - Weighted Mean}\phantomsection\label{section:3-11-8}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=15]
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q29} \problem[2022-P2-Q29]{DSE2022-CoreP2-Q29}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2014-CoreP2-Q28}
+\item \problemans{DSE2018-CoreP2-Q29}
+\item \problemans{DSE2021-CoreP2-Q30}
+\item \problemans{DSE2023-CoreP2-Q30}
+\item \problemans{DSE2012S-CoreP2-Q28}
+\item \problemans{DSE2012-CoreP2-Q30}
+\item \problemans{DSE2018-CoreP1-Q11}
+\item \problemans{DSE2013-CoreP2-Q27}
+\item \problemans{DSE2015-CoreP2-Q30}
+\item \problemans{DSE2016-CoreP2-Q30}
+\item \problemans{DSE2019-CoreP1-Q08}
+\item \problemans{DSE2012-CoreP1-Q10}
+\item \problemans{DSE2020-CoreP2-Q30}
+\item \problemans{DSE2021-CoreP1-Q11}
+\item \problemans{DSE2022-CoreP2-Q29}
+\end{enumx}
+\newpage
+\newpage
+\thispagestyle{empty}
+\rhead{Introduction to Probability}
+\lfoot{S3-Ch12}
+\begin{center}
+Mathematics Revision Notes\\\vspace{1cm}
+\greybox{S3-Ch12}\\\vspace{1cm}
+{\fontsize{24pt}{24pt}\selectfont {Introduction to Probability}} \\\vspace{1cm}
+\phantomsection\label{chapter:S3-12}
+
+\end{center}
+\vspace{0.5cm}
+\hline
+\section*{Section List}
+\begin{enumx}[label=Sec 12.\arabic*\ ]
+\item \hyperref[section:3-12-1]{Concepts of Probability }
+\item \hyperref[section:3-12-2]{Further Problems on Probability}
+\item \hyperref[section:3-12-3]{Experimental Probability}
+\item \hyperref[section:3-12-4]{Expected Value}
+\end{enumx}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 1}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 12.1 &  &  $7$ &  &  &  &  &  &  $4$ &  $3$ &  $5$ &  &  &  &  &  &  \\\hline
+Sec 12.2 &  &  &  &  $6$ &  &  $3$ &  $5$ &  &  &  &  &  &  $5$ &  $5$ &  $5$ &  \\\hline
+Sec 12.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 12.4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Core Paper 2}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        & Sa & Pr & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 \\\hline\hline
+Sec 12.1 &  &  &  $1$ &  &  $1$ &  $1$ &  &  $1$ &  &  &  &  &  $1$ &  &  &  \\\hline
+Sec 12.2 &  &  $1$ &  $1$ &  $1$ &  &  &  $1$ &  &  $1$ &  $1$ &  $1$ &  $1$ &  &  $1$ &  $1$ &  \\\hline
+Sec 12.3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+Sec 12.4 &  &  &  &  &  &  $1$ &  $1$ &  &  &  &  &  &  &  &  &  \\\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+\begin{absolutelynopagebreak}
+\begin{center}
+\textbf{DSE Question Table}
+\end{center}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+        & 12.1 & 12.2 & 12.3 & 12.4 \\\hline
+\hline
+Paper 1 - A(1)& \hyperref[DSE2017-CoreP1-Q07]{2017-P1-Q7} & \hyperref[DSE2015-CoreP1-Q03]{2015-P1-Q3} &  &  \\
+& \hyperref[DSE2018-CoreP1-Q04]{2018-P1-Q4} & \hyperref[DSE2016-CoreP1-Q09]{2016-P1-Q9} &  &  \\
+& \hyperref[DSE2019-CoreP1-Q08]{2019-P1-Q8} & \hyperref[DSE2022-CoreP1-Q09]{2022-P1-Q9} &  &  \\
+&  & \hyperref[DSE2023-CoreP1-Q09]{2023-P1-Q9} &  &  \\
+&  & \hyperref[DSE2024-CoreP1-Q09]{2024-P1-Q9} &  &  \\
+\hline
+Paper 1 - A(2)& \hyperref[DSE2012P-CoreP1-Q13]{Prac-P1-Q13} & \hyperref[DSE2013-CoreP1-Q10]{2013-P1-Q10} &  &  \\
+\hline
+Paper 1 - B&  &  &  &  \\
+\hline
+\hline
+Paper 2 - A& \hyperref[DSE2012-CoreP2-Q28]{2012-P2-Q28} & \hyperref[DSE2012P-CoreP2-Q28]{Prac-P2-Q28} &  & \hyperref[DSE2015-CoreP2-Q27]{2015-P2-Q27} \\
+& \hyperref[DSE2014-CoreP2-Q27]{2014-P2-Q27} & \hyperref[DSE2012-CoreP2-Q27]{2012-P2-Q27} &  & \hyperref[DSE2016-CoreP2-Q29]{2016-P2-Q29} \\
+& \hyperref[DSE2015-CoreP2-Q28]{2015-P2-Q28} & \hyperref[DSE2013-CoreP2-Q26]{2013-P2-Q26} &  &  \\
+& \hyperref[DSE2017-CoreP2-Q28]{2017-P2-Q28} & \hyperref[DSE2016-CoreP2-Q28]{2016-P2-Q28} &  &  \\
+& \hyperref[DSE2022-CoreP2-Q28]{2022-P2-Q28} & \hyperref[DSE2018-CoreP2-Q28]{2018-P2-Q28} &  &  \\
+&  & \hyperref[DSE2019-CoreP2-Q28]{2019-P2-Q28} &  &  \\
+&  & \hyperref[DSE2020-CoreP2-Q28]{2020-P2-Q28} &  &  \\
+&  & \hyperref[DSE2021-CoreP2-Q28]{2021-P2-Q28} &  &  \\
+&  & \hyperref[DSE2023-CoreP2-Q28]{2023-P2-Q28} &  &  \\
+&  & \hyperref[DSE2024-CoreP2-Q28]{2024-P2-Q28} &  &  \\
+\hline
+Paper 2 - B&  &  &  &  \\
+\hline
+\hline
+Cross Topic&  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+\end{absolutelynopagebreak}
+
+
+
+
+% S3 Ch12 - 12.1 Concepts of Probability 
+\section*{Section 12.1 - Concepts of Probability }\phantomsection\label{section:3-12-1}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=1]
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP1-Q07} \problem[2017-P1-Q7]{DSE2017-CoreP1-Q07}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP1-Q04} \problem[2018-P1-Q4]{DSE2018-CoreP1-Q04}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP1-Q08} \problem[2019-P1-Q8]{DSE2019-CoreP1-Q08}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=4]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP1-Q13} \problem[Prac-P1-Q13]{DSE2012P-CoreP1-Q13}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=5]
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q28} \problem[2012-P2-Q28]{DSE2012-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2014-CoreP2-Q27} \problem[2014-P2-Q27]{DSE2014-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q28} \problem[2015-P2-Q28]{DSE2015-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2017-CoreP2-Q28} \problem[2017-P2-Q28]{DSE2017-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP2-Q28} \problem[2022-P2-Q28]{DSE2022-CoreP2-Q28}
+\end{enumx}
+
+
+
+
+% S3 Ch12 - 12.2 Further Problems on Probability
+\section*{Section 12.2 - Further Problems on Probability}\phantomsection\label{section:3-12-2}
+
+\textbf{Paper 1 - A(1)}
+\begin{enumx}[label=\arabic*.,start=10]
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP1-Q03} \problem[2015-P1-Q3]{DSE2015-CoreP1-Q03}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP1-Q09} \problem[2016-P1-Q9]{DSE2016-CoreP1-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2022-CoreP1-Q09} \problem[2022-P1-Q9]{DSE2022-CoreP1-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP1-Q09} \problem[2023-P1-Q9]{DSE2023-CoreP1-Q09}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP1-Q09} \problem[2024-P1-Q9]{DSE2024-CoreP1-Q09}
+\end{enumx}
+\textbf{Paper 1 - A(2)}
+\begin{enumx}[label=\arabic*.,start=15]
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP1-Q10} \problem[2013-P1-Q10]{DSE2013-CoreP1-Q10}
+\end{enumx}
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=16]
+\phantomsection
+\item \phantomsection\label{DSE2012P-CoreP2-Q28} \problem[Prac-P2-Q28]{DSE2012P-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2012-CoreP2-Q27} \problem[2012-P2-Q27]{DSE2012-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2013-CoreP2-Q26} \problem[2013-P2-Q26]{DSE2013-CoreP2-Q26}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q28} \problem[2016-P2-Q28]{DSE2016-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2018-CoreP2-Q28} \problem[2018-P2-Q28]{DSE2018-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2019-CoreP2-Q28} \problem[2019-P2-Q28]{DSE2019-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2020-CoreP2-Q28} \problem[2020-P2-Q28]{DSE2020-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2021-CoreP2-Q28} \problem[2021-P2-Q28]{DSE2021-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2023-CoreP2-Q28} \problem[2023-P2-Q28]{DSE2023-CoreP2-Q28}
+\phantomsection
+\item \phantomsection\label{DSE2024-CoreP2-Q28} \problem[2024-P2-Q28]{DSE2024-CoreP2-Q28}
+\end{enumx}
+
+
+
+
+% S3 Ch12 - 12.3 Experimental Probability
+\section*{Section 12.3 - Experimental Probability}\phantomsection\label{section:3-12-3}
+
+
+
+
+
+% S3 Ch12 - 12.4 Expected Value
+\section*{Section 12.4 - Expected Value}\phantomsection\label{section:3-12-4}
+
+\textbf{Paper 2 - A}
+\begin{enumx}[label=\arabic*.,start=26]
+\phantomsection
+\item \phantomsection\label{DSE2015-CoreP2-Q27} \problem[2015-P2-Q27]{DSE2015-CoreP2-Q27}
+\phantomsection
+\item \phantomsection\label{DSE2016-CoreP2-Q29} \problem[2016-P2-Q29]{DSE2016-CoreP2-Q29}
+\end{enumx}
+\section*{Answers}
+\begin{enumx}[label=\arabic*.,start=1]
+\item \problemans{DSE2017-CoreP1-Q07}
+\item \problemans{DSE2018-CoreP1-Q04}
+\item \problemans{DSE2019-CoreP1-Q08}
+\item \problemans{DSE2012P-CoreP1-Q13}
+\item \problemans{DSE2012-CoreP2-Q28}
+\item \problemans{DSE2014-CoreP2-Q27}
+\item \problemans{DSE2015-CoreP2-Q28}
+\item \problemans{DSE2017-CoreP2-Q28}
+\item \problemans{DSE2022-CoreP2-Q28}
+\item \problemans{DSE2015-CoreP1-Q03}
+\item \problemans{DSE2016-CoreP1-Q09}
+\item \problemans{DSE2022-CoreP1-Q09}
+\item \problemans{DSE2023-CoreP1-Q09}
+\item \problemans{DSE2024-CoreP1-Q09}
+\item \problemans{DSE2013-CoreP1-Q10}
+\item \problemans{DSE2012P-CoreP2-Q28}
+\item \problemans{DSE2012-CoreP2-Q27}
+\item \problemans{DSE2013-CoreP2-Q26}
+\item \problemans{DSE2016-CoreP2-Q28}
+\item \problemans{DSE2018-CoreP2-Q28}
+\item \problemans{DSE2019-CoreP2-Q28}
+\item \problemans{DSE2020-CoreP2-Q28}
+\item \problemans{DSE2021-CoreP2-Q28}
+\item \problemans{DSE2023-CoreP2-Q28}
+\item \problemans{DSE2024-CoreP2-Q28}
+\item \problemans{DSE2015-CoreP2-Q27}
+\item \problemans{DSE2016-CoreP2-Q29}
+\end{enumx}
+\end{document}
